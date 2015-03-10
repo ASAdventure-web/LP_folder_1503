@@ -1,0 +1,12 @@
+//VARIABLES
+$full-width: 1170px;
+$num-cols: 12;
+$num-gutters: $num-cols - 1;
+$gutter-width: 1px;
+$col-width: ($full-width - ($gutter-width * ($num-cols - 1))) / $num-cols;
+$row-height: 421px;
+$max-row-height: 2;
+
+//MIXINS
+
+

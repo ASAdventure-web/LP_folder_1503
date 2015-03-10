@@ -1,0 +1,168 @@
+/**************************************
+	STYLING FOR MAART-FOLDER
+**************************************/
+.content-row .col-1, .content-row .col-2, .content-row .col-3, .content-row .col-4, .content-row .col-5, .content-row .col-6, .content-row .col-7, .content-row .col-8, .content-row .col-9, .content-row .col-10, .content-row .col-11, .content-row .col-12 {
+  background: white;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 1px; }
+  .content-row .col-1 + .col-1, .content-row .col-2 + .col-1, .content-row .col-3 + .col-1, .content-row .col-4 + .col-1, .content-row .col-5 + .col-1, .content-row .col-6 + .col-1, .content-row .col-7 + .col-1, .content-row .col-8 + .col-1, .content-row .col-9 + .col-1, .content-row .col-10 + .col-1, .content-row .col-11 + .col-1, .content-row .col-12 + .col-1, .content-row .col-1 + .col-2, .content-row .col-2 + .col-2, .content-row .col-3 + .col-2, .content-row .col-4 + .col-2, .content-row .col-5 + .col-2, .content-row .col-6 + .col-2, .content-row .col-7 + .col-2, .content-row .col-8 + .col-2, .content-row .col-9 + .col-2, .content-row .col-10 + .col-2, .content-row .col-11 + .col-2, .content-row .col-12 + .col-2, .content-row .col-1 + .col-3, .content-row .col-2 + .col-3, .content-row .col-3 + .col-3, .content-row .col-4 + .col-3, .content-row .col-5 + .col-3, .content-row .col-6 + .col-3, .content-row .col-7 + .col-3, .content-row .col-8 + .col-3, .content-row .col-9 + .col-3, .content-row .col-10 + .col-3, .content-row .col-11 + .col-3, .content-row .col-12 + .col-3, .content-row .col-1 + .col-4, .content-row .col-2 + .col-4, .content-row .col-3 + .col-4, .content-row .col-4 + .col-4, .content-row .col-5 + .col-4, .content-row .col-6 + .col-4, .content-row .col-7 + .col-4, .content-row .col-8 + .col-4, .content-row .col-9 + .col-4, .content-row .col-10 + .col-4, .content-row .col-11 + .col-4, .content-row .col-12 + .col-4, .content-row .col-1 + .col-5, .content-row .col-2 + .col-5, .content-row .col-3 + .col-5, .content-row .col-4 + .col-5, .content-row .col-5 + .col-5, .content-row .col-6 + .col-5, .content-row .col-7 + .col-5, .content-row .col-8 + .col-5, .content-row .col-9 + .col-5, .content-row .col-10 + .col-5, .content-row .col-11 + .col-5, .content-row .col-12 + .col-5, .content-row .col-1 + .col-6, .content-row .col-2 + .col-6, .content-row .col-3 + .col-6, .content-row .col-4 + .col-6, .content-row .col-5 + .col-6, .content-row .col-6 + .col-6, .content-row .col-7 + .col-6, .content-row .col-8 + .col-6, .content-row .col-9 + .col-6, .content-row .col-10 + .col-6, .content-row .col-11 + .col-6, .content-row .col-12 + .col-6, .content-row .col-1 + .col-7, .content-row .col-2 + .col-7, .content-row .col-3 + .col-7, .content-row .col-4 + .col-7, .content-row .col-5 + .col-7, .content-row .col-6 + .col-7, .content-row .col-7 + .col-7, .content-row .col-8 + .col-7, .content-row .col-9 + .col-7, .content-row .col-10 + .col-7, .content-row .col-11 + .col-7, .content-row .col-12 + .col-7, .content-row .col-1 + .col-8, .content-row .col-2 + .col-8, .content-row .col-3 + .col-8, .content-row .col-4 + .col-8, .content-row .col-5 + .col-8, .content-row .col-6 + .col-8, .content-row .col-7 + .col-8, .content-row .col-8 + .col-8, .content-row .col-9 + .col-8, .content-row .col-10 + .col-8, .content-row .col-11 + .col-8, .content-row .col-12 + .col-8, .content-row .col-1 + .col-9, .content-row .col-2 + .col-9, .content-row .col-3 + .col-9, .content-row .col-4 + .col-9, .content-row .col-5 + .col-9, .content-row .col-6 + .col-9, .content-row .col-7 + .col-9, .content-row .col-8 + .col-9, .content-row .col-9 + .col-9, .content-row .col-10 + .col-9, .content-row .col-11 + .col-9, .content-row .col-12 + .col-9, .content-row .col-1 + .col-10, .content-row .col-2 + .col-10, .content-row .col-3 + .col-10, .content-row .col-4 + .col-10, .content-row .col-5 + .col-10, .content-row .col-6 + .col-10, .content-row .col-7 + .col-10, .content-row .col-8 + .col-10, .content-row .col-9 + .col-10, .content-row .col-10 + .col-10, .content-row .col-11 + .col-10, .content-row .col-12 + .col-10, .content-row .col-1 + .col-11, .content-row .col-2 + .col-11, .content-row .col-3 + .col-11, .content-row .col-4 + .col-11, .content-row .col-5 + .col-11, .content-row .col-6 + .col-11, .content-row .col-7 + .col-11, .content-row .col-8 + .col-11, .content-row .col-9 + .col-11, .content-row .col-10 + .col-11, .content-row .col-11 + .col-11, .content-row .col-12 + .col-11, .content-row .col-1 + .col-12, .content-row .col-2 + .col-12, .content-row .col-3 + .col-12, .content-row .col-4 + .col-12, .content-row .col-5 + .col-12, .content-row .col-6 + .col-12, .content-row .col-7 + .col-12, .content-row .col-8 + .col-12, .content-row .col-9 + .col-12, .content-row .col-10 + .col-12, .content-row .col-11 + .col-12, .content-row .col-12 + .col-12 {
+    margin-left: 1px; }
+
+.content-row .col-1 {
+  width: 8.254985755%; }
+
+.content-row .right + .col-1 {
+  margin-left: 0; }
+
+.content-row .col-2 {
+  width: 16.5954415954%; }
+
+.content-row .right + .col-2 {
+  margin-left: 0; }
+
+.content-row .col-3 {
+  width: 24.9358974359%; }
+
+.content-row .right + .col-3 {
+  margin-left: 0; }
+
+.content-row .col-4 {
+  width: 33.2763532764%; }
+
+.content-row .right + .col-4 {
+  margin-left: 0; }
+
+.content-row .col-5 {
+  width: 41.6168091168%; }
+
+.content-row .right + .col-5 {
+  margin-left: 0; }
+
+.content-row .col-6 {
+  width: 49.9572649573%; }
+
+.content-row .right + .col-6 {
+  margin-left: 0; }
+
+.content-row .col-7 {
+  width: 58.2977207977%; }
+
+.content-row .right + .col-7 {
+  margin-left: 0; }
+
+.content-row .col-8 {
+  width: 66.6381766382%; }
+
+.content-row .right + .col-8 {
+  margin-left: 0; }
+
+.content-row .col-9 {
+  width: 74.9786324786%; }
+
+.content-row .right + .col-9 {
+  margin-left: 0; }
+
+.content-row .col-10 {
+  width: 83.3190883191%; }
+
+.content-row .right + .col-10 {
+  margin-left: 0; }
+
+.content-row .col-11 {
+  width: 91.6595441595%; }
+
+.content-row .right + .col-11 {
+  margin-left: 0; }
+
+.content-row .col-12 {
+  width: 100%; }
+
+.content-row .right + .col-12 {
+  margin-left: 0; }
+
+.content-row .row-1 {
+  height: 421px; }
+
+.content-row .row-2 {
+  height: 843px; }
+
+#lp-folder-wrapper {
+  background: #ddd;
+  color: #454545;
+  font-family: "Open Sans", Helvetica-Neue, Arial, sans-serif;
+  margin: 0 auto;
+  max-width: 1170px;
+  width: 100%; }
+
+.content-row .right, .content-block .right {
+  float: right; }
+.content-row:after, .content-block:after {
+  clear: both;
+  content: "";
+  display: table; }
+
+img {
+  max-width: 100%; }
+
+.bottom-container {
+  box-sizing: border-box;
+  padding: 0 4%;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  .bottom-container .price-tag .barred-price, .bottom-container .price-tag .new-price {
+    margin: .1em 0; }
+  .bottom-container .price-tag .barred-price {
+    font-size: .7em;
+    line-height: 1;
+    text-decoration: line-through; }
+  .bottom-container .price-tag .new-price {
+    color: #AF151E;
+    font-size: 1.6em;
+    font-weight: 600;
+    line-height: 1; }
+  .bottom-container .price-tag .currency {
+    font-size: .6em;
+    margin-right: .2em; }
+  .bottom-container h3 {
+    display: inline-block;
+    float: left;
+    font-size: 1em;
+    font-weight: 600;
+    margin: .5em 0 .3em;
+    width: 70%; }
+  .bottom-container .product-category {
+    font-weight: 100; }
+  .bottom-container .swatch-container {
+    display: inline-block;
+    float: right;
+    width: 30%; }
+  .bottom-container .swatch {
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: block;
+    float: right;
+    height: 16px;
+    margin: 10px 3px 0 0;
+    width: 16px; }
+  .bottom-container .logo-container {
+    border-top: 2px dotted #ddd;
+    box-sizing: border-box;
+    display: table;
+    clear: both;
+    height: 51px;
+    padding: 10px 0;
+    width: 100%; }
+    .bottom-container .logo-container .logo {
+      vertical-align: middle; }
+
+.red {
+  background: #FA4251; }
+
+.blue {
+  background: #475163; }
+
+.beige {
+  background: #A69A8A; }
