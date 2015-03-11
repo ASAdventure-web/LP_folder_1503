@@ -13,6 +13,7 @@ class Products_model extends CI_Model {
 			$this->db->select('Products.* , Merken.*');
 			$this->db->from('Products');
 			$this->db->join('Merken', 'Products.merk = Merken.merknaam','left');
+			$this->db->order_by('hoofdcategorie','asc');
 			$query = $this->db->get();
 			return $query->result_array();
 		}
