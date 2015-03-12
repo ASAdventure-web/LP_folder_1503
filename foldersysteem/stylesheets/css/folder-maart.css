@@ -106,6 +106,9 @@
 img {
   max-width: 100%; }
 
+.contentlink {
+  color: inherit; }
+
 .bottom-container {
   box-sizing: border-box;
   padding: 0 4%;
@@ -156,7 +159,8 @@ img {
     padding: 10px 0;
     width: 100%; }
     .bottom-container .logo-container .logo {
-      vertical-align: middle; }
+      vertical-align: middle;
+      height: 100%; }
 
 .red {
   background: #FA4251; }
