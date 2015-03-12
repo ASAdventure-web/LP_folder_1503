@@ -62,6 +62,11 @@ img{
 	max-width: 100%;
 }
 
+//GENERAL LINK
+.contentlink {
+	color: inherit;
+}
+
 //BOTTOM CONTAINER
 .bottom-container{
 	box-sizing: border-box;
@@ -125,6 +130,7 @@ img{
 		width: 100%;
 		.logo{
 			vertical-align: middle;
+			height: 100%;
 		}
 	}
 }
