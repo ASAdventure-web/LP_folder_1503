@@ -39,6 +39,7 @@
 */
 
 $route['default_controller'] = 'products';
+$route['filter'] = 'products/filter';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

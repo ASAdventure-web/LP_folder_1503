@@ -10,9 +10,31 @@
 	<div id="lp-folder-wrapper">
 		<div class="content-row">
 		<?php foreach ($products as $product) { ?>
+		<?php if (($gridcount % 3 == 0) && ($count % 4 == 0) && ($photocount % 2 == 0)) { ?>
+			<div class="col-6 row-2">
+				<?php if(isset($photos[$photocount]['link'])) { ?>
+					<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
+				<?php } ?>	
+					<img src="images/beelden/<?php echo $photos[$photocount]['beeld'] ?>">
+				<?php if(isset($photos[$photocount]['link'])) { ?>
+					</a>
+				<?php } ?>
+			</div>
+		<?php } ?>
+		<?php if (($gridcount % 3 == 0) && ($count % 4 == 2) && ($photocount % 2 == 1)) { ?>
+			<div class="col-6 row-2 right">
+				<?php if(isset($photos[$photocount]['link'])) { ?>
+					<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
+				<?php } ?>	
+					<img src="images/beelden/<?php echo $photos[$photocount]['beeld'] ?>">
+				<?php if(isset($photos[$photocount]['link'])) { ?>
+					</a>
+				<?php } ?>
+			</div>
+		<?php } ?>
 			<div class="col-3 row-1 <?php if(isset($product['exclusief'])) { print(' exclusive'); } if (isset($product['uitverkocht'])) { print(' sold'); }?>">
 				<a href="<?php echo $product['link'] ?>" alt="<?php echo $product['productnaam'] ?>" class="contentlink">
-					<img src="images/producten/<?php echo $product['img'] ?>" alt="<?php echo $product['productnaam'].' '.$product['productomschrijving'] ?>">
+					<img src="images/producten/<?php echo $product['img'] ?>" title="<?php echo $product['productnaam'].' '.$product['productomschrijving'] ?>">
 					<div class="bottom-container">
 						<div class="price-tag">
 							<?php if(isset($product['specialeactie'])) { ?>
@@ -48,8 +70,17 @@
 		if ( $count % 4 == 0 ) { ?>
 			</div>
 			<div class="content-row">
-		<?php } ?>
-		<?php } ?>
+		<?php 
+			if ($gridcount % 3 == 0) {
+				$photocount++;
+			}
+			$gridcount++;
+		} 
+		}
+		while(( $count % 4 ) != 0 ) { ?>
+			<div class="col-3 row-1"></div>
+		<?php	$count++;
+		} ?>
 		</div>
 	</div>
 </body>
