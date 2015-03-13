@@ -46,7 +46,10 @@
 							<p class="new-price"><span class="currency">&euro;</span><?php echo $product['nieuweprijs'] ?></p>	
 						</div>
 						<h3><?php echo $product['productnaam'] ?> <span class="product-category"><?php echo $product['productomschrijving'] ?></span></h3>
-						<?php if(isset($product['kleur'])) { ?>
+						
+						<div class="logo-container">
+							<img src="images/merken/<?php echo $product['logo'] ?>" alt="<?php echo $product['merknaam'] ?>" class="logo">
+							<?php if(isset($product['kleur'])) { ?>
 						<div class="swatch-container">
 							<?php $kleuren = explode(" ", $product['kleur']); 
 								foreach ($kleuren as $kleur) { 
@@ -60,8 +63,6 @@
 							?>
 						</div>
 						<?php } ?>
-						<div class="logo-container">
-							<img src="images/merken/<?php echo $product['logo'] ?>" alt="<?php echo $product['merknaam'] ?>" class="logo">
 						</div>
 					</div>
 				</a>
