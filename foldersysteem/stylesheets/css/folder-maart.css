@@ -135,7 +135,7 @@ img {
     font-size: 1em;
     font-weight: 600;
     margin: .5em 0 .3em;
-    width: 70%; }
+    width: 100%; }
   .bottom-container .product-category {
     font-weight: 100; }
   .bottom-container .swatch-container {
@@ -161,12 +161,3 @@ img {
     .bottom-container .logo-container .logo {
       vertical-align: middle;
       height: 100%; }
-
-.red {
-  background: #FA4251; }
-
-.blue {
-  background: #475163; }
-
-.beige {
-  background: #A69A8A; }
