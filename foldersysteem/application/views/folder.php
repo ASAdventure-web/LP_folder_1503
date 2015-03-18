@@ -53,6 +53,11 @@
 					<h2><?php echo $categorie ?></h2>
 								</div>
 				<div class="content-row">
+				<?php 
+					if ($gridcount % 3 == 0) {
+						$photocount++;
+					}
+					$gridcount++; ?>
 				<!-- end if -->
 				<?php	} ?>
 			<!-- print foto -->
