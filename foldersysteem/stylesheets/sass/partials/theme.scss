@@ -1,0 +1,49 @@
+//WRAPPER
+#lp-folder-wrapper{
+	background: #ddd;
+	color: #454545;
+	font-family: "Open Sans", Helvetica-Neue, Arial, sans-serif;
+}
+
+//GENERAL LINK
+.contentlink {
+	color: inherit;
+}
+
+//BOTTOM CONTAINER
+.bottom-container{
+	.price-tag{
+		.barred-price{
+			font-size: .7em;
+			line-height: 1;
+			text-decoration: line-through;
+		}
+		.new-price{
+			color: #AF151E;
+			font-size: 1.6em;
+			font-weight: 600;
+			line-height: 1;
+		}
+		.currency{
+			font-size: .6em;
+		}
+	}
+	h3{
+		font-size: 1em;
+		font-weight: 600;
+
+		@include tablet-landscape{
+			font-size: .8em;
+		}
+	}
+	.product-category{
+		font-weight: 100;
+	}
+	.swatch{
+		//border: 1px solid #ccc;
+		border-radius: 50%;
+	}
+	.logo-container{
+		border-top: 2px dotted #ddd;
+	}
+}

@@ -1,0 +1,16 @@
+#lp-folder-wrapper{
+	max-width: $desktop-wrapper;
+	width: 100%;
+
+	@include tablet-landscape{
+		max-width: $tablet-landscape-wrapper;
+	}
+
+	@include tablet-portrait{
+		max-width: $tablet-portrait-wrapper;
+	}
+
+	@include mobile{
+		max-width: $mobile-wrapper;
+	}
+}
