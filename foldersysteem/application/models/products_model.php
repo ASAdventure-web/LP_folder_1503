@@ -6,19 +6,15 @@ class Products_model extends CI_Model {
 		$this->load->database();
 	}
 
-	public function get_products($categorie = FALSE)
+	public function get_products($filter = FALSE)
 	{
-		if ($categorie === FALSE)
+		if ($filter === FALSE)
 		{
-			$this->db->select('Products.* , Merken.*');
-			$this->db->from('Products');
-			$this->db->join('Merken', 'Products.merk = Merken.merknaam','left');
-			$this->db->order_by('hoofdcategorie','asc');
-			$query = $this->db->get();
+			$query = $this->db->query("SELECT `Products`.*, `Merken`.* FROM (`Products`) LEFT JOIN `Merken` ON `Products`.`merk` = `Merken`.`merknaam` order by FIELD(categorie,'O','F','R','B')");
 			return $query->result_array();
 		}
 		else {
-			$query = $this->db->query("SELECT `Products`.*, `Merken`.* FROM (`Products`) LEFT JOIN `Merken` ON `Products`.`merk` = `Merken`.`merknaam` WHERE `Products`.`".$categorie."` IS NOT NULL");
+			$query = $this->db->query("SELECT `Products`.*, `Merken`.* FROM (`Products`) LEFT JOIN `Merken` ON `Products`.`merk` = `Merken`.`merknaam` WHERE `Products`.`".$filter."` IS NOT NULL");
 			return $query->result_array();
 
 		}
