@@ -21,7 +21,7 @@
 				<!-- rij afwerken -->
 				<?php while(( $count % 4 ) != 0 ) { 
 					 if (($gridcount % 3 == 0) && ($count % 4 == 0) && ($photocount % 2 == 0)) { ?>
-						<div class="col-6 row-2">
+						<div class="col-6 row-2 image-container">
 							<?php if(isset($photos[$photocount]['link'])) { ?>
 								<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 							<?php } ?>	
@@ -32,7 +32,7 @@
 						</div>
 					<?php } ?>
 					<?php if (($gridcount % 3 == 0) && ($count % 4 == 2) && ($photocount % 2 == 1)) { ?>
-						<div class="col-6 row-2 right">
+						<div class="col-6 row-2 image-container right">
 							<?php if(isset($photos[$photocount]['link'])) { ?>
 								<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 							<?php } ?>	
@@ -57,7 +57,7 @@
 				<?php	} ?>
 			<!-- print foto -->
 			<?php if (($gridcount % 3 == 0) && ($count % 4 == 0) && ($photocount % 2 == 0)) { ?>
-				<div class="col-6 row-2">
+				<div class="col-6 row-2 image-container">
 					<?php if(isset($photos[$photocount]['link'])) { ?>
 						<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 					<?php } ?>	
@@ -68,7 +68,7 @@
 				</div>
 			<?php } ?>
 			<?php if (($gridcount % 3 == 0) && ($count % 4 == 2) && ($photocount % 2 == 1)) { ?>
-				<div class="col-6 row-2 right">
+				<div class="col-6 row-2 image-container right">
 					<?php if(isset($photos[$photocount]['link'])) { ?>
 						<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 					<?php } ?>	
@@ -130,7 +130,7 @@
 		<!-- maak laatste rij af -->
 		<?php while(( $count % 4 ) != 0 ) { 
 		 if (($gridcount % 3 == 0) && ($count % 4 == 0) && ($photocount % 2 == 0)) { ?>
-			<div class="col-6 row-2">
+			<div class="col-6 row-2 image-container">
 				<?php if(isset($photos[$photocount]['link'])) { ?>
 					<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 				<?php } ?>	
@@ -141,7 +141,7 @@
 			</div>
 		<?php } ?>
 		<?php if (($gridcount % 3 == 0) && ($count % 4 == 2) && ($photocount % 2 == 1)) { ?>
-			<div class="col-6 row-2 right">
+			<div class="col-6 row-2 image-container right">
 				<?php if(isset($photos[$photocount]['link'])) { ?>
 					<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 				<?php } ?>	
