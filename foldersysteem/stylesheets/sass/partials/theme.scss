@@ -3,6 +3,10 @@
 	background: #ddd;
 	color: #454545;
 	font-family: "Open Sans", Helvetica-Neue, Arial, sans-serif;
+	@include mobile{
+		background: #ffffff;
+		overflow: hidden;
+	}
 }
 
 //GENERAL LINK
@@ -13,6 +17,12 @@
 //BOTTOM CONTAINER
 .bottom-container{
 	.price-tag{
+		.special{
+			background: #AF151E;
+			color: #efefef;
+			font-size: .75em;
+			text-transform: uppercase;
+		}
 		.barred-price{
 			font-size: .7em;
 			line-height: 1;

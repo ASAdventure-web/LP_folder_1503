@@ -54,9 +54,6 @@
 
 //WRAPPER
 #lp-folder-wrapper{
-	background: #ddd;
-	color: #454545;
-	font-family: "Open Sans", Helvetica-Neue, Arial, sans-serif;
 	margin: 0 auto;
 }
 
@@ -70,6 +67,18 @@
 		content: "";
 		display: table;
 	}
+	.product-container{
+		@include mobile{
+			border-left: 1px solid #DDDDDD;
+			border-bottom: 1px solid #DDDDDD;
+			margin-left: -1px !important;
+			width: 50%;
+
+			.contentlink{
+				display: block;
+			}
+		}
+	}
 }
 
 //RESPONSIVE IMAGES
@@ -77,10 +86,22 @@ img{
 	max-width: 100%;
 }
 
+.image-container{
+	@include mobile{
+		display: none;
+	}
+}
+
 .product-image{
+	box-sizing: border-box;
+	padding: 5%;
 	@include tablet-portrait{
-		margin: 0 10%;
-		max-width: 80%;
+		padding: 5% 10%;
+	}
+	@include mobile{
+		display: block;
+		margin: 0 auto;
+		max-width: 210px;
 	}
 }
 
@@ -92,6 +113,11 @@ img{
 		bottom: 0;
 	width: 100%;
 	.price-tag{
+		.special{
+			display: inline-block;
+			margin: .2em 0;
+			padding: .1em .4em;
+		}
 		.barred-price, .new-price{
 			margin: .1em 0;
 		}
