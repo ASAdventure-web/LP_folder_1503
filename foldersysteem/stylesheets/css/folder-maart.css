@@ -220,7 +220,8 @@ img {
     .product-image {
       display: block;
       margin: 0 auto;
-      max-width: 210px; } }
+      max-width: 210px;
+      width: 100%; } }
 
 .bottom-container {
   box-sizing: border-box;
