@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**************************************
 	STYLING FOR MAART-FOLDER
 **************************************/
@@ -210,6 +211,29 @@
   clear: both;
   content: "";
   display: table; }
+.content-row .product-container.sold-out-nl::before, .content-row .product-container.sold-out-fr::before, .content-row .product-container.sold-out-en::before, .content-block .product-container.sold-out-nl::before, .content-block .product-container.sold-out-fr::before, .content-block .product-container.sold-out-en::before {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  color: #ffffff;
+  font-family: 'Ventography';
+  font-size: 4em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 100;
+  margin: 0;
+  padding: 2.5em 0;
+  text-align: center;
+  text-rendering: optimizeLegibility; }
+.content-row .product-container.sold-out-nl::before, .content-block .product-container.sold-out-nl::before {
+  content: "Uitverkocht"; }
+.content-row .product-container.sold-out-fr::before, .content-block .product-container.sold-out-fr::before {
+  content: "Épuisé"; }
+.content-row .product-container.sold-out-en::before, .content-block .product-container.sold-out-en::before {
+  content: "Sold Out"; }
 @media only screen and (max-width: 767px) {
   .content-row .product-container, .content-block .product-container {
     border-left: 1px solid #DDDDDD;
