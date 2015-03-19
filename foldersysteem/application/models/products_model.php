@@ -10,7 +10,7 @@ class Products_model extends CI_Model {
 	{
 		if ($filter === FALSE)
 		{
-			$query = $this->db->query("SELECT `Products`.*, `Merken`.* FROM (`Products`) LEFT JOIN `Merken` ON `Products`.`merk` = `Merken`.`merknaam` order by FIELD(categorie,'O','F','R','B'), volgorde ASC");
+			$query = $this->db->query("SELECT `Products`.*, `Merken`.* FROM (`Products`) LEFT JOIN `Merken` ON `Products`.`merk` = `Merken`.`merknaam` order by FIELD(categorie,'Outdoor','Fashion','Run','Bike'), volgorde ASC");
 			return $query->result_array();
 		}
 		else {
