@@ -42,7 +42,7 @@
 							<?php } ?>
 						</div>
 					<?php } ?>
-					<div class="col-3 row-1 product-container"></div>
+					<div class="col-3 row-1 product-container mobile-hide"></div>
 					<?php $count++;
 					} ?>
 					</div>
@@ -156,7 +156,7 @@
 				<?php } ?>
 			</div>
 		<?php } ?>
-		<div class="col-3 row-1 product-container"></div>
+		<div class="col-3 row-1 product-container mobile-hide"></div>
 		<?php $count++;
 		} ?>
 		</div>
