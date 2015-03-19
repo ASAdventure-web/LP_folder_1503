@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: Mar 18, 2015 at 12:03 PM
+-- Generation Time: Mar 19, 2015 at 11:19 AM
 -- Server version: 5.5.38
 -- PHP Version: 5.6.2
 
@@ -41,7 +41,7 @@ CREATE TABLE `Fotos` (
   `run` tinyint(1) DEFAULT NULL,
   `bike` tinyint(1) DEFAULT NULL,
   `hoofdcategorie` int(11) NOT NULL DEFAULT '10'
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `Fotos`
@@ -52,7 +52,11 @@ INSERT INTO `Fotos` (`id`, `beeld`, `link`, `alt`, `dames`, `heren`, `junior`, `
 (2, 'junior.jpg', NULL, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 80),
 (7, 'AN3Y4933.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 10),
 (9, 'AN3Y4010.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, 20),
-(10, 'AN3Y5123.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, 1, NULL, NULL, NULL, 40);
+(10, 'AN3Y5123.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, 1, NULL, NULL, NULL, 40),
+(11, 'AN3Y7611.jpg', NULL, NULL, NULL, NULL, NULL, 1, 1, NULL, NULL, NULL, NULL, 50),
+(12, 'AN3Y3599.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, 90),
+(13, 'AN3Y5955.jpg', NULL, NULL, NULL, 1, NULL, 1, 1, NULL, NULL, NULL, NULL, 60),
+(14, 'AN3Y3193.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 100);
 
 -- --------------------------------------------------------
 
@@ -64,7 +68,7 @@ CREATE TABLE `Merken` (
 `id` int(11) NOT NULL,
   `merknaam` varchar(50) COLLATE utf8_bin NOT NULL DEFAULT 'merknaam',
   `logo` varchar(200) COLLATE utf8_bin NOT NULL DEFAULT 'srclogo.jpg'
-) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `Merken`
@@ -105,7 +109,30 @@ INSERT INTO `Merken` (`id`, `merknaam`, `logo`) VALUES
 (32, 'Lomography', 'lomo-logo.png'),
 (33, 'Signum', 'signum-logo.png'),
 (34, 'Dstrezzed', 'DS_LOGO_ANNO2012z_NEG1.png'),
-(35, 'Jack & Jones', 'JackJoneslogoblack-redConverted.png');
+(35, 'Jack & Jones', 'JackJoneslogoblack-redConverted.png'),
+(36, 'King Louie', 'King-Louie.jpg'),
+(37, 'Only', 'only.jpg'),
+(38, 'Haglofs', 'jl353_haglofs_logo.jpg'),
+(39, 'Fatboy', 'fatboy_logo.png'),
+(40, 'Outwell', 'outwell.jpg'),
+(41, 'Yaya', 'YAYA-LOGO-pewter140.jpg'),
+(42, 'Lotusgrill', 'lotus_grill.jpg'),
+(43, 'Suck UK', 'lg_suckuk2.jpg'),
+(44, 'Esschert', 'esschert.jpg'),
+(45, 'Xtorm', 'logo-xtorm.jpg'),
+(46, 'Coureur du monde', 'cdm_logo.jpg'),
+(47, 'Davanti', 'LogoZwartDavantiBikewear.jpg'),
+(48, 'De marchi', 'De_Marchi_new_logo.png'),
+(49, 'Maloja', 'Maloja.jpg'),
+(50, 'Gentleman''s Hardware', 'GENTLEMEN_S_HARDWARE_BANNER_1024x1024.jpg'),
+(51, 'Brooks', 'Brooks-Logo.jpg'),
+(52, 'Craft', 'craft-logo-300x79.jpg'),
+(53, 'Gore Bike Wear', 'a6d73b9a42544224fe23e2305c351099.jpg'),
+(54, 'Nike', 'nike.png'),
+(55, 'Cube', '2000px-Cube_Logo.svg.jpg'),
+(56, 'New Balance', 'new_balance_logo_30005.jpg'),
+(57, 'Adidas', 'adidas.jpg'),
+(58, 'Nathan', 'Nathan.jpg');
 
 -- --------------------------------------------------------
 
@@ -137,22 +164,22 @@ CREATE TABLE `Products` (
   `bike` tinyint(1) DEFAULT NULL,
   `volgorde` int(11) NOT NULL DEFAULT '10',
   `categorie` varchar(1) NOT NULL DEFAULT 'O'
-) ENGINE=InnoDB AUTO_INCREMENT=64 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=106 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `Products`
 --
 
 INSERT INTO `Products` (`id`, `img`, `link`, `oudeprijs`, `nieuweprijs`, `productnaam`, `productomschrijving`, `merk`, `kleur`, `specialeactie`, `uitverkocht`, `exclusief`, `dames`, `heren`, `junior`, `fashion`, `picnic`, `outdoorkleding`, `uitrusting`, `run`, `bike`, `volgorde`, `categorie`) VALUES
-(4, 'CMP_POWERSTRETCH_3542C50011_3232.jpg', '/junior/outdoor/fleecen-truien?&flt_brand=cmp&flt_product_colour_selling_price_0902=30,50&filters=brand|LIST,product_colour_selling_price_0902|FLOAT', '49,95', '35', 'Powerstretch', 'Fleece', 'CMP', '#f00 #214081', NULL, NULL, 1, NULL, NULL, 1, NULL, NULL, 1, NULL, NULL, NULL, 80, 'F'),
-(5, 'AYACUCHO_STOWAWAY-KIDS_35A6C50004_4204.jpg', '/junior/outdoor/jassen?&flt_jacket_type=waterdichte_jassen&flt_brand=aya&filters=jacket_type|LIST,brand|LIST', NULL, '39', 'Stowaway', 'Jas', 'Ayacucho', 'blauwrood.png #7B7E4D #3CAEAF #31a0cf', 'Slechts', NULL, 1, NULL, NULL, 1, NULL, NULL, 1, NULL, NULL, NULL, 80, 'F'),
-(6, 'BRIAN-N-NEPHEW_ETELKA_4781C40023_1004.jpg', '/brian-nephew-broek-etelka-4781c40023?id_colour=342', NULL, '35', 'Etelka', 'Broek', 'Brian and Nephew', 'bloemen.png', 'Promo', NULL, 1, NULL, NULL, 1, 1, NULL, NULL, NULL, NULL, NULL, 80, 'F'),
-(7, 'BRIAN-N-NEPHEW_GODOT_4A12C50143_7575.jpg', '/brian-nephew-t-shirt-godot-4A12C50143', '29,95', '19', 'Godot', 'T-shirt', 'Brian and Nephew', '#C1C5C8 #777DA0', NULL, NULL, 1, NULL, NULL, 1, 1, NULL, NULL, NULL, NULL, NULL, 80, 'F'),
-(8, 'PETIT-LOUIE_JAZZ_41A2C50119.jpg', '/petit-louie-Jurk-Polo-Jazz-Apples-47a1c50081', '39,95', '29', 'Jazz Polo', 'Jurk', 'Petit Louie', 'polo.png', NULL, NULL, 1, NULL, NULL, 1, 1, NULL, NULL, NULL, NULL, NULL, 80, 'F'),
-(9, 'PETIT-LOUIE_OSAKA_47A1C50082.jpg', NULL, '39,95', '29', 'Osaka Cup', 'Jurk', 'Petit Louie', 'osaka.png', NULL, NULL, 1, NULL, NULL, 1, 1, NULL, NULL, NULL, NULL, NULL, 80, 'F'),
+(4, 'CMP_POWERSTRETCH_3542C50011_3232.jpg', '/junior/outdoor/fleecen-truien?&flt_brand=cmp&flt_product_colour_selling_price_0902=30,50&filters=brand|LIST,product_colour_selling_price_0902|FLOAT', '49,95', '35', 'Powerstretch', 'Fleece Junior', 'CMP', '#f00 #214081', NULL, NULL, 1, NULL, NULL, 1, NULL, NULL, 1, NULL, NULL, NULL, 80, 'F'),
+(5, 'AYACUCHO_STOWAWAY-KIDS_35A6C50004_4204.jpg', '/junior/outdoor/jassen?&flt_jacket_type=waterdichte_jassen&flt_brand=aya&filters=jacket_type|LIST,brand|LIST', NULL, '39', 'Stowaway', 'Jas Junior', 'Ayacucho', 'blauwrood.png #7B7E4D #3CAEAF #31a0cf', 'Slechts', NULL, 1, NULL, NULL, 1, NULL, NULL, 1, NULL, NULL, NULL, 80, 'F'),
+(6, 'BRIAN-N-NEPHEW_ETELKA_4781C40023_1004.jpg', '/brian-nephew-broek-etelka-4781c40023?id_colour=342', NULL, '35', 'Etelka', 'Broek Meisjes', 'Brian and Nephew', 'bloemen.png', 'Promo', NULL, 1, NULL, NULL, 1, 1, NULL, NULL, NULL, NULL, NULL, 80, 'F'),
+(7, 'BRIAN-N-NEPHEW_GODOT_4A12C50143_7575.jpg', '/brian-nephew-t-shirt-godot-4A12C50143', '29,95', '19', 'Godot', 'T-shirt Jongens', 'Brian and Nephew', '#C1C5C8 #777DA0', NULL, NULL, 1, NULL, NULL, 1, 1, NULL, NULL, NULL, NULL, NULL, 80, 'F'),
+(8, 'PETIT-LOUIE_JAZZ_41A2C50119.jpg', '/petit-louie-Jurk-Polo-Jazz-Apples-47a1c50081', '39,95', '29', 'Jazz Polo', 'Jurk Meisjes', 'Petit Louie', 'polo.png', NULL, NULL, 1, NULL, NULL, 1, 1, NULL, NULL, NULL, NULL, NULL, 80, 'F'),
+(9, 'PETIT-LOUIE_OSAKA_47A1C50082.jpg', NULL, '39,95', '29', 'Osaka Cup', 'Jurk Meisjes', 'Petit Louie', 'osaka.png', NULL, NULL, 1, NULL, NULL, 1, 1, NULL, NULL, NULL, NULL, NULL, 80, 'F'),
 (10, 'LONG-ISLAND_BUDDIES.jpg', NULL, NULL, '59,95', 'Buddies', 'Skateboard', 'Long Island', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, 80, 'F'),
-(11, 'DAKINE_PIVOT_2111d40137_4242_01.jpg', '/dakine-dagrugzak-pivot-27l-2111d40137', '44,95', '29', 'Pivot', '27l rugzak', 'Dakine', 'pivotblauw.png pivotleger.png #000', NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, 1, NULL, NULL, 80, 'F'),
-(12, 'CORTINA_U4-JEANS-FIETS_711fc50001_4545_01_be.jpg', '/index.cfm/fuseaction/products.search/?searchvalue=transport+mini+jeans', NULL, '489', 'Transport Mini U4 Jeans', 'Fiets', 'Cortina', NULL, 'Gebruik ecocheques', NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, 1, NULL, 80, 'F'),
+(11, 'DAKINE_PIVOT_2111d40137_4242_01.jpg', '/dakine-dagrugzak-pivot-21l-2111d40137', '44,95', '29', 'Pivot', '21l rugzak', 'Dakine', 'pivotblauw.png pivotleger.png #000', NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, 1, NULL, NULL, 80, 'F'),
+(12, 'CORTINA_U4-JEANS-FIETS_711fc50001_4545_01_be.jpg', '/index.cfm/fuseaction/products.search/?searchvalue=transport+mini+jeans', NULL, '489', 'Transport Mini U4 Jeans', 'Fiets Junior', 'Cortina', NULL, 'Gebruik ecocheques', NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, 1, NULL, 80, 'F'),
 (13, 'JACK-WOLFSKIN_STROKKUR-JACKET_3142C50003_5050.jpg', '/jack-wolfskin-fleece-strokkur-full-zip-3142c50003?id_colour=2998', '99,95', '69', 'Strokkur', 'Damesjacket', 'Jack Wolfskin', '#358e8f', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, 10, 'O'),
 (14, 'JACK-WOLFSKIN_STROKKUR_3342C50027_4141.jpg', '/jack-wolfskin-fleece-strokkur-full-zip-3342c50027?id_colour=2296', '99,95', '69', 'Strokkur', 'Herenjacket', 'Jack Wolfskin', '#6e7c8c', NULL, NULL, NULL, NULL, 1, NULL, 1, NULL, NULL, NULL, NULL, NULL, 10, 'O'),
 (15, 'EIDER_CHARVIN_31B5C50019_6262.jpg', '/eider-jas-charvin-31b5c50019?id_colour=3700', '179,95', '129', 'Charvin', 'Damesjas', 'Eider', '#937f78', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, 10, 'O'),
@@ -174,7 +201,7 @@ INSERT INTO `Products` (`id`, `img`, `link`, `oudeprijs`, `nieuweprijs`, `produc
 (31, 'BYNOLYT_SPARROW_2713B90005_0101_01.jpg', '/bynolyt-verrekijker-sparrow-10x25-2713b90005?id_colour=5806', '99', '69', 'Sparrow', '10x25 verrekijker', 'Bynolyt', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, 1, NULL, NULL, 20, 'O'),
 (32, '620801_GRPH_Ember_Power_Light_fullpwr.jpg', NULL, NULL, '44,95', 'Ember', 'Power zaklamp', 'Black diamond', '#6c6764 #e1cf79', 'Gebruik ecocheques', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, 1, NULL, NULL, 20, 'O'),
 (33, 'PETZL_MYO-RXP_2511d20001_7171_01.jpg', '/petzl-hoofdlamp-myo-rxp-2511d20001?id_colour=4246', '79,95', '59', 'Myo RXP', 'Hoofdlamp', 'Petzl', NULL, 'Gebruik ecocheques', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, 1, NULL, NULL, 20, 'O'),
-(34, '2453c40001_7030_01.jpg', '/garmin-gps-forerunner-220-met-hartslagmeter-2453c40001?id_colour=4133', '249', '199', 'GPS Forerunner 220', 'Met hartslagmeter', 'Garmin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, 100, 'R'),
+(34, '2453c40001_7030_01.jpg', '/garmin-gps-forerunner-220-met-hartslagmeter-2453c40001?id_colour=4133', '249', '199', 'GPS Forerunner 220', 'Sporthorloge', 'Garmin', NULL, '+ gratis hartslagmeter', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, 100, 'R'),
 (35, 'JW3B12C40006_6238_02.jpg', '/jack-wolfskin-schoen-traction-low-texapore-3b12c40006?id_colour=3679', '99,95', '69', 'Traction Low Texapore', 'Damesschoen', 'Jack Wolfskin', 'jwdschoen.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, 20, 'O'),
 (36, 'jw3D12C50018_6026_02.jpg', '/jack-wolfskin-schoen-traction-low-texapore-3d12c50018?id_colour=3514', '99,95', '69', 'Traction Low Texapore', 'Herenschoen', 'Jack Wolfskin', 'jwhschoen.jpg', NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, 1, NULL, NULL, NULL, 20, 'O'),
 (37, '31B5C30006_3232_03.jpg', '/jack-wolfskin-jas-targhee-31b5c30006?id_colour=1594', '159,95', '109', 'Targhee', 'Damesjas', 'Jack Wolfskin', '#f73c4d', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, 30, 'O'),
@@ -185,7 +212,7 @@ INSERT INTO `Products` (`id`, `img`, `link`, `oudeprijs`, `nieuweprijs`, `produc
 (42, 'NORDISK_OPPLAND-2-PU_1122c40005_5050_01.jpg', '/nordisk-tent-oppland-2-pu-1122c40005?id_colour=2998', '259,95', '189', 'Oppland 2 PU', 'Tent', 'Nordisk', '#5a7244', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, 30, 'O'),
 (43, 'osprey_kestrel_1212xx0019_5050_01.jpg', '/osprey-dagrugzak-kestrel-28-1212xx0019?id_colour=1438', '119,95', '85', 'Kestrel', '28l dagrugzak', 'Osprey', '#a32a1d #20436d', NULL, NULL, NULL, 1, 1, NULL, NULL, NULL, NULL, 1, NULL, NULL, 30, 'O'),
 (44, 'AYACUCHO_STOWAWAY_33A7C50003_3030.jpg', '/ayacucho-jas-stowaway-33a7c50003?id_colour=1438', NULL, '49,95', 'Stowaways', 'Regenjas Heren', 'Ayacucho', '#943C3B #292929 #7A7C4B #1E91C1', NULL, NULL, NULL, NULL, 1, NULL, 1, NULL, 1, NULL, NULL, NULL, 30, 'O'),
-(45, 'AYACUCHO_STOWAWAY_31B7C50002_5252.jpg', '/ayacucho-jas-stowaway-dames-31b7c50002?id_colour=3154', NULL, '49,95', 'Stowaway', 'Regenjas Dames', 'Ayacucho', '#3CC7AD #5D5D5D 5A9FC9 #EA0049 blauwrood.png', NULL, NULL, NULL, 1, NULL, NULL, 1, NULL, 1, NULL, NULL, NULL, 30, 'O'),
+(45, 'AYACUCHO_STOWAWAY_31B7C50002_5252.jpg', '/ayacucho-jas-stowaway-dames-31b7c50002?id_colour=3154', NULL, '49,95', 'Stowaway', 'Regenjas Dames', 'Ayacucho', '#3CC7AD #5D5D5D #5A9FC9 #EA0049 blauwrood.png', NULL, NULL, NULL, 1, NULL, NULL, 1, NULL, 1, NULL, NULL, NULL, 30, 'O'),
 (46, 'ICEBREAKER_ALL-IN-A-DAY_3312C40024_4747.jpg', '/icebreaker-t-shirt-tech-lite-all-in-a-day-3312c40024?id_colour=2764', '69,96', '45', 'All in a day', 'T-shirt Heren', 'Icebreaker', '#0389BC #F43735', NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, 1, NULL, NULL, NULL, 40, 'O'),
 (47, 'COLUMBIA_DECLINATION-TRAIL_3322C50023_3012.jpg', '/columbia-hemd-declination-trail-ii-3322c50023?id_colour=1425', '49,95', '35', 'Declination Trail', 'Hemd', 'Columbia', 'ruitrood.png ruitblauw.png', NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, 1, NULL, NULL, NULL, 40, 'O'),
 (48, 'ICEBREAKER_SCOOP_3112C40016_7235.jpg', '/icebreaker-t-shirt-tech-scoop-3112c40016?id_colour=4310', '69,95', '45', 'Scoop', 'T-shirt Dames', 'Icebreaker', 'scoop.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, 40, 'O'),
@@ -199,11 +226,49 @@ INSERT INTO `Products` (`id`, `img`, `link`, `oudeprijs`, `nieuweprijs`, `produc
 (56, 'ICHI_DINOLI_4182C50034_4106.jpg', '/ichi-broek-dinoli-4182c50034?id_colour=2346', '49,95', '35', 'Dinoli', 'Damesbroek', 'Ichi', 'zwaan.png tegel.png', NULL, NULL, NULL, 1, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 50, 'F'),
 (57, 'ICHI_CINNO_41G2C50031_5206.jpg', '/ichi-blouse-cinno-41g2c50031?id_colour=3193', '39,95', '27', 'Cinno', 'Blouse', 'Ichi', 'tegel.png zwaan.png', NULL, NULL, NULL, 1, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 50, 'F'),
 (58, 'Sinner_Fernando_2212C50002.jpg', NULL, '49,95', '25', 'Fernando', 'Bril', 'Sinner', 'gevlekt.png', NULL, NULL, NULL, 1, 1, NULL, 1, NULL, NULL, NULL, NULL, NULL, 50, 'F'),
-(59, 'SIRIUS_OSCAR_LICHTSLINGER.jpg', '/sirius-gadget-oscar-garden-party-balloons-2g31c50001?id_colour=5735', '', '44,95', 'Oscar', 'Sfeerverlichting tuin', 'Sirius', 'licht.jpg #FCF9E9', 'Gebruik ecocheques', NULL, NULL, NULL, NULL, NULL, 1, 1, NULL, NULL, NULL, NULL, 50, 'F'),
+(59, 'SIRIUS_OSCAR_LICHTSLINGER.jpg', '/sirius-gadget-oscar-garden-party-balloons-2g31c50001?id_colour=5735', NULL, '44,95', 'Oscar', 'Sfeerverlichting tuin', 'Sirius', 'licht.jpg #FCF9E9', 'Gebruik ecocheques', NULL, NULL, NULL, NULL, NULL, 1, 1, NULL, NULL, NULL, NULL, 50, 'F'),
 (60, 'LOMOGRAPHY_LOMO-''INSTANT_2af1d40053_7070_05_be.jpg', '/lomography-fototoestel-lomo-instant-3-lenzen-2af1d40053?id_colour=4168', NULL, '129,95', 'Lomo', 'Instant Camera + 3 lenzen', 'Lomography', '#58585A #E8E8E8', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 50, 'F'),
 (61, 'SIGNUM_HEMD_4421C50156_5506.jpg', '/signum-hemd-151507707-4421c50156?id_colour=3424', '89,95', '59', 'Geometric', 'Hemd', 'Signum', 'geo.png', NULL, NULL, NULL, NULL, 1, NULL, 1, NULL, NULL, NULL, NULL, NULL, 50, 'F'),
 (62, 'DSTREZZED_CARGO-PANT_4482C50003_4141.jpg', '/dstrezzed-broek-500001107-4482c50003?id_colour=2296', '69,95', '49', 'Cargo', 'Broek Heren', 'Dstrezzed', '#59556C #A39E8A', NULL, NULL, NULL, NULL, 1, NULL, 1, NULL, NULL, NULL, NULL, NULL, 50, 'F'),
-(63, 'JACK&JONES_HEMD_4421C50205_4506-copy.jpg', '/jack-jones-hemd-time-4421c50205?id_colour=2346', NULL, '39,95', 'Time', 'Hemd', 'Jack & Jones', 'donkerstip.png blauwstip.png', 'Slechts', NULL, NULL, NULL, 1, NULL, 1, NULL, NULL, NULL, NULL, NULL, 50, 'F');
+(63, 'JACK&JONES_HEMD_4421C50205_4506-copy.jpg', '/jack-jones-hemd-time-4421c50205?id_colour=2346', NULL, '39,95', 'Time', 'Hemd', 'Jack & Jones', 'donkerstip.jpg blauwstip.jpg', 'Slechts', NULL, NULL, NULL, 1, NULL, 1, NULL, NULL, NULL, NULL, NULL, 50, 'F'),
+(64, 'KING-LOUIE_LEONORA_41A2C50134.jpg', '/king-louie-jurk-cross-leonora-41a2c50134?id_colour=2806', '79,95', '55', 'Leonora', 'Jurk', 'King Louie', 'bloemen.png', NULL, NULL, NULL, 1, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 60, 'F'),
+(65, 'KING-LOUIE_JAZZ_41A2C50135.jpg', '/king-louie-jurk-cross-jazz-41a2c50135?id_colour=3138', '79,95', '55', 'Jazz', 'Jurk', 'King Louie', 'louiejazz.jpg', NULL, NULL, NULL, 1, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 60, 'F'),
+(66, 'KING-LOUIE_FLOWER-CARDIGAN_4153C50065_4949.jpg', '/king-louie-cardigan-flower-4153c50065?id_colour=2920', '62,95', '45', 'Flower', 'Cardigan Dames', 'King Louie', '#94D0CB #F28C7D', NULL, NULL, NULL, 1, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 60, 'F'),
+(67, 'ONLY_TANT_4182C50069_1149.jpg', '/only-broek-tant-4182c50069?id_colour=379', '26,95', '19', 'Tant', 'Broek Dames', 'Only', 'exotic.jpg roses.jpg kerselaar.jpg', NULL, NULL, NULL, 1, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 60, 'F'),
+(68, 'ONLY_ANDY-LACE_4141C40044_3611.jpg', '/only-trui-andy-lace-4141c40044?id_colour=1886', '26,95', '19', 'Andy Lace', 'Damessweater', 'Only', '#dfbcbd #9cdbe2 #E7E1D4', NULL, NULL, NULL, 1, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 60, 'F'),
+(69, 'haglofs_cargo40_2141c50007_5126_01_be.jpg', '/hagloefs-reistas-cargo-40-2141c50007?id_colour=3052', '59,95', '39', 'Cargo', 'Duffel 40l', 'Haglofs', 'geelgroen.jpg blauw.jpg bruinrood.jpg', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, 1, NULL, NULL, 60, 'F'),
+(70, 'fatboy_picknickkleed.jpg', '/fatboy-gadget-picnic-lounge-mat-141zc50004?id_colour=1577', NULL, '249', 'Lounge', 'Picnic mat', 'Fatboy', 'arabic.jpg', 'Met gratis lampje', NULL, NULL, 1, NULL, 1, 1, 1, NULL, NULL, NULL, NULL, 60, 'F'),
+(71, 'OUTWELL_TRANSPORTER_153zc50001_5050_01_be.jpg', '/outwell-diverse-bolderkar-transporter-153zc50001?id_colour=2998', NULL, '119,95', 'Transporter', 'Bolderkar', 'Outwell', '#52604E', NULL, NULL, NULL, NULL, NULL, 1, NULL, 1, NULL, NULL, NULL, NULL, 60, 'F'),
+(72, 'DSTREZZED_TSHIRT_4411C50005_6262.jpg', '/dstrezzed-t-shirt-200002152-4411c50005?id_colour=3626', '49,95', '35', 'Lange mouw', 'T-shirt Heren', 'Dstrezzed', 'ribbels.jpg', NULL, NULL, NULL, NULL, 1, NULL, 1, NULL, NULL, NULL, NULL, NULL, 60, 'F'),
+(73, '4462c50004_5656_01_be.jpg', '/dstrezzed-short-cargo-4462c50004?id_colour=3466', '59,95', '39', 'Cargo', 'Herenshort', 'Dstrezzed', '#594C39', NULL, NULL, NULL, NULL, 1, NULL, 1, NULL, NULL, NULL, NULL, NULL, 60, 'F'),
+(74, 'DSTREZZED_SHORT_4461C50010_4106.jpg', '/dstrezzed-short-510005001-4461c50061?id_colour=3499', '59,95', '39', 'Tropical', 'Herenshort', 'Dstrezzed', 'tropical.jpg', NULL, NULL, NULL, NULL, 1, NULL, 1, NULL, NULL, NULL, NULL, NULL, 60, 'F'),
+(75, 'DSTREZZED_SHORT_4461C50061_5604.jpg', '/dstrezzed-short-chino-4461c50010?id_colour=2346', '59,95', '39', 'Chino', 'Herenshort', 'Dstrezzed', 'chino.jpg', NULL, NULL, NULL, NULL, 1, NULL, 1, NULL, NULL, NULL, NULL, NULL, 60, 'F'),
+(76, 'YAYA_41C3C50037_6565.jpg', '/yaya-jas-050221-as-41c3c50037?id_colour=3934', '79,95', '55', 'Cognac', 'Damesjas', 'Yaya', '#C36A38', NULL, NULL, NULL, 1, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 60, 'F'),
+(77, 'LOTUS-GRILL_BBQ_1432c50005_5252_01_be.jpg', '/lotus-grill-kookvuur-lotusgrill-classic-1432c50005?id_colour=3154', NULL, '159,95', 'Classic', 'Tafelbarbeque', 'Lotusgrill', '#8EAE62 #B03436 #21211F', 'Met gratis brandstofkit', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, 70, 'O'),
+(78, '2g31c40016_0101_01.jpg', '/suck-uk-gadget-kartonnen-radio-2g31c40016?id_colour=5806', NULL, '39,95', 'Kartonnen radio', 'Gadget', 'Suck UK', '#D19A60', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, 70, 'O'),
+(79, 'ESSCHERT_TUINFAKKELS.jpg', '/index.cfm/fuseaction/products.search/?searchvalue=tuinfakkel', NULL, '3,95', 'Tuinfakkel', 'small/medium', 'Esschert', '#ED8440 #D795BB #73B6E0 #F5D082', 'Vanaf', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, 70, 'O'),
+(80, 'ESSCHERT_BIJENHUIS.jpg', '/esschert-gadget-bijenhuis-2g32c50037?id_colour=3194', NULL, '11,95', 'Bijenhuis', 'Gadget', 'Esschert', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, 70, 'O'),
+(81, 'ESSCHERT_PICNICMAND_2G32C50004.jpg', '/esschert-gadget-picknickmand-botanicae-141zc50003?id_colour=3267', NULL, '64,95', 'Botanicae', 'Picknickmand', 'Esschert', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, 70, 'O'),
+(82, 'ESSCHERT_GIFT-SET-BBQ_2G32C50015_02.jpg', '/esschert-gadget-bbq-gereedschapset-2g32c50015?id_colour=3084', NULL, '29,95', 'Gereedschapset', 'BBQ', 'Esschert', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, 70, 'O'),
+(83, '', '', '59,95', '45', 'AP125', 'Zonnepaneel batterijoplader', 'Xtorm', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, 1, NULL, NULL, 70, 'O'),
+(84, '7712c50035_4222_01_be.jpg', '/coureur-du-monde-t-shirt-louison-7712c50035?id_colour=2355', NULL, '74,95', 'Louison', 'Polo Shirt Heren', 'Coureur du monde', 'coureurgeel.jpg coureurgroen.jpg', NULL, NULL, NULL, NULL, 1, NULL, 1, NULL, NULL, NULL, NULL, 1, 90, 'B'),
+(85, 'DAVANTI_ENZO_7712C50022_4141.jpg', '/davanti-bikewear-t-shirt-enzo-7712c50022?id_colour=2296', NULL, '69,95', 'Enzo', 'Fietsshirt', 'Davanti', '#2D3A4D #8E1B20 #C89B40', NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, 1, 90, 'B'),
+(86, NULL, NULL, NULL, '119,95', 'Tradition', 'Polo Shirt Heren', 'De Marchi', NULL, NULL, NULL, NULL, NULL, 1, NULL, 1, NULL, NULL, NULL, NULL, 1, 90, 'B'),
+(87, 'MALOJA_NAIR_7712C50027_7272.jpg', '/maloja-t-shirt-nair-7712c50027?id_colour=2296', NULL, '44,95', 'Nair', 'T-shirt Heren', 'Maloja', '#2F3042', NULL, NULL, NULL, NULL, 1, NULL, 1, NULL, NULL, NULL, NULL, 1, 90, 'B'),
+(88, 'GENTLEMENS-HARDWARE_01.jpg', '/gentlemen-s-hardware-broekklem-bicycle-clips-7212c40001?id_colour=5806', NULL, '19,95', 'Bicycle Clips', 'Broekklem', 'Gentleman''s Hardware', NULL, NULL, NULL, NULL, NULL, 1, NULL, 1, NULL, NULL, NULL, NULL, 1, 90, 'B'),
+(90, 'CRAFT_7712C50009_7032_01-1.jpg', '/index.cfm/fuseaction/products.search/?searchvalue=craft+active+bib+jersey', '149,95', '109', 'Active', 'Fietsshirt + Bibshirt Heren', 'Craft', NULL, 'Setprijs', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, 1, 90, 'B'),
+(91, '7712c40004_3203_01.jpg', '/gore-bike-wear-t-shirt-element-adrenaline-7712c40004?id_colour=1650', '69,95', '49', 'Adrenaline', 'Fietsshirt Heren', 'Gore Bike Wear', '#C21C24 #292D30', NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, 1, 90, 'B'),
+(92, 'gbw_contest_7742c00008_7070.jpg', NULL, '69,95', '49', 'Contest', 'Fietsbroek', 'Gore Bike Wear', '#333333', NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, 1, 90, 'B'),
+(93, '7111d30036_7010_1_be.jpg', '/cube-racefiets-agree-gtc-sl-7111d30036?id_colour=4118', '2099', '1499', 'Agree GTC SL', 'Racefiets Heren', 'Cube', NULL, '+ 2 gratis onderhoudsbeurten', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, 1, 90, 'B'),
+(94, 'nike_skylon_2211b80062_7070.jpg', '/nike-bril-skylon-ace-2211b80062?id_colour=4124', '109,95', '59', 'Skylon Ace', 'Zonnebril', 'Nike', '#716258 #00030C #2A304A nikeblauw.jpg nikegeel.jpg niketurqoise.jpg', NULL, NULL, NULL, 1, 1, NULL, NULL, NULL, NULL, NULL, NULL, 1, 90, 'B'),
+(98, 'NIKE_AIR-ZOOM-TERRA-KIGER-2_8611c50002_0101_01_be.jpg', '/nike-schoen-nike-air-zoom-terra-kiger-2-8611c50002?id_colour=5806', NULL, '139,95', 'Air Zoom Terra Kiger 2', 'Loopschoen Heren', 'Nike', 'nikeschoen.jpg', NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 1, NULL, 100, 'R'),
+(99, 'NEW-BALANCE_GO-2-PRINTED-CAPRI_8142C50017.jpg', '/new-balance-broek-go-2-printed-8142c50017?id_colour=4140', NULL, '44,95', 'Go 2 Printed', 'Damesbroek', 'New Balance', 'balance.jpg', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, 100, 'R'),
+(100, '8112c50018_3737_01_be.jpg', '/new-balance-t-shirt-ice-8112c50018?id_colour=1984', NULL, '34,95', 'Ice short Sleeve', 'T-shirt Dames', 'New Balance', '#fd213b', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, 100, 'R'),
+(101, 'ADIDAS_RUN-M-SHIRT_8412C50003.jpg', '/adidas-t-shirt-run-heren-8412c50003?id_colour=2686', NULL, '24,95', 'Run M', 'T-shirt Heren', 'Adidas', '#0571C9', NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 1, NULL, 100, 'R'),
+(102, 'ADIDAS_RUN-WINDSTOPPER_8431C50001_4444.jpg', '/adidas-windstopper-run-wind-heren-8431c50001?id_colour=2530', NULL, '54,95', 'Run', 'Windstopper Heren', 'Adidas', '#3C4C70', NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 1, NULL, 100, 'R'),
+(103, 'ADIDAS_RESPONSE_SHORT_8443C50005.jpg', '/adidas-broek-response-7-inch-heren-8443c50005?id_colour=4149', NULL, '32,95', 'Response', 'Herenshort', 'Adidas', 'adidas.jpg', NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 1, NULL, 100, 'R'),
+(104, 'NATHAN_QUICK-VIEW-BOTTLE_85z1c50009_7070_01_be.jpg', '/nathan-divers-quick-view-85z1c50009?id_colour=4168', NULL, '29,95', 'Quick View', 'Drinkfles met telefoonhouder', 'Nathan', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, NULL, 100, 'R'),
+(105, '', NULL, NULL, NULL, 'TOMTOM actie', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 99, 'R');
 
 --
 -- Indexes for dumped tables
@@ -235,17 +300,17 @@ ALTER TABLE `Products`
 -- AUTO_INCREMENT for table `Fotos`
 --
 ALTER TABLE `Fotos`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `Merken`
 --
 ALTER TABLE `Merken`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=36;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=59;
 --
 -- AUTO_INCREMENT for table `Products`
 --
 ALTER TABLE `Products`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=64;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=106;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
