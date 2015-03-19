@@ -9,8 +9,8 @@
 <body>
 	<div id="lp-folder-wrapper">
 		<!-- Eerste categoriehoofding -->
-		<div class="content-row">
-			<h2><?php echo $categorie ?></h2>
+		<div class="content-row z-shadow">
+			<h2 class="categorie-titel"><?php echo $categorie ?></h2>
 		</div>
 		<!-- start eerste contentrow -->
 		<div class="content-row">
@@ -47,10 +47,10 @@
 					} ?>
 					</div>
 				<!-- nieuwe rij initialiseren -->
-				<div class="content-row">
+				<div class="content-row z-shadow">
 				<!-- categorie herdefiniëren -->
 					<?php $categorie = $product["categorie"]; ?>
-					<h2><?php echo $categorie ?></h2>
+					<h2 class="categorie-titel"><?php echo $categorie ?></h2>
 								</div>
 				<div class="content-row">
 				<!-- end if -->
