@@ -15,7 +15,7 @@ class Products extends CI_Controller {
 		$data['count'] = 0;
 		$data['gridcount'] = 0;
 		$data['photocount'] = 0;
-		$data['photoprinted'] = true;
+		$data['categorie'] = $data['products'][0]['categorie'];
 
 		$this->load->view('folder', $data);
 	}
