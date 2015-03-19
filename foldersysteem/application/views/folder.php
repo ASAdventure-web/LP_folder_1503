@@ -9,8 +9,8 @@
 <body>
 	<div id="lp-folder-wrapper">
 		<!-- Eerste categoriehoofding -->
-		<div class="content-row">
-			<h2><?php echo $categorie ?></h2>
+		<div class="content-row z-shadow">
+			<h2 class="categorie-titel"><?php echo $categorie ?></h2>
 		</div>
 		<!-- start eerste contentrow -->
 		<div class="content-row">
@@ -42,15 +42,15 @@
 							<?php } ?>
 						</div>
 					<?php } ?>
-					<div class="col-3 row-1"></div>
+					<div class="col-3 row-1 product-container"></div>
 					<?php $count++;
 					} ?>
 					</div>
 				<!-- nieuwe rij initialiseren -->
-				<div class="content-row">
+				<div class="content-row z-shadow">
 				<!-- categorie herdefiniëren -->
 					<?php $categorie = $product["categorie"]; ?>
-					<h2><?php echo $categorie ?></h2>
+					<h2 class="categorie-titel"><?php echo $categorie ?></h2>
 								</div>
 				<div class="content-row">
 				<?php 
@@ -84,7 +84,7 @@
 				</div>
 			<?php } ?>
 			<!-- print product -->
-			<div class="col-3 row-1 <?php if(isset($product['exclusief'])) { print(' exclusive'); } if (isset($product['uitverkocht'])) { print(' sold'); }?>">
+			<div class="col-3 row-1 product-container <?php if(isset($product['exclusief'])) { print(' exclusive'); } if (isset($product['uitverkocht'])) { print(' sold'); }?>">
 				<a href="<?php echo $product['link'] ?>" alt="<?php echo $product['productnaam'] ?>" class="contentlink">
 					<img class="product-image" src="images/producten/<?php echo $product['img'] ?>" title="<?php echo $product['productnaam'].' '.$product['productomschrijving'] ?>">
 					<div class="bottom-container">
@@ -156,7 +156,7 @@
 				<?php } ?>
 			</div>
 		<?php } ?>
-		<div class="col-3 row-1"></div>
+		<div class="col-3 row-1 product-container"></div>
 		<?php $count++;
 		} ?>
 		</div>
