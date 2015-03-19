@@ -92,7 +92,7 @@
 						</button>
 			<?php	}  else {?>
 			<!-- print product -->
-			<div class="col-3 row-1 product-container <?php if(isset($product['exclusief'])) { print(' exclusive'); } if (isset($product['uitverkocht'])) { print(' sold'); }?>">
+			<div class="col-3 row-1 product-container <?php if(isset($product['exclusief'])) { print('exclusive'); } if (isset($product['uitverkocht'])) { print('sold-out-nl'); }?>">
 				<a href="http://www.asadventure.com<?php echo $product['link'] ?>" alt="<?php echo $product['productnaam'] ?>" class="contentlink">
 					<img class="product-image" src="images/producten/<?php echo $product['img'] ?>" title="<?php echo $product['productnaam'].' '.$product['productomschrijving'] ?>">
 					<div class="bottom-container">
