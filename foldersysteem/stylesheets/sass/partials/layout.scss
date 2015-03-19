@@ -59,6 +59,17 @@
 
 //CONTENT ROW
 .content-row, .content-block{
+	&.z-shadow{
+		display: block;
+		position: relative;
+		z-index: 10;
+	}
+	.categorie-titel{
+		background: #ffffff;
+		display: block;
+		margin: 0;
+		padding: 1em 1em;
+	}
 	.right{
 		float: right;
 	}
