@@ -11,20 +11,27 @@
 
 //CONTENT ROW
 .content-row, .content-block{
-	.categorie-titel{
+	&.z-shadow{
+		//background: url(../../images/test.jpg);
 		background: #ffffff;
 		border-top: 1px solid #dddddd;
 		box-shadow: 0 14px 3px -10px rgba(0,0,0,.04), 0 -12px 3px -10px rgba(0,0,0,.04);
-		//color: #9B9B9B;
-		color: rgba(139,125,91,.8);
+	}
+	.categorie-titel{
+		color: #9b9b9b;
+		//color: rgba(114,102,95,.8);
 		font-family: 'Ventography';
 		font-size: 5em;
+		font-weight: 400;
 		-webkit-font-smoothing: antialiased;
-		letter-spacing: 5px;
+		letter-spacing: 2px;
 		line-height: 1;
+		//padding-left: 2.5em;
 		text-align: center;
 		text-rendering: optimizeLegibility;
-		text-shadow: 1px 1px 6px #fff, 0 0 0 #000, 1px 4px 6px #fff;
+		//text-shadow: 1px 1px 6px #fff, 0 0 0 #000, 1px 4px 6px #fff;
+		//text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+		transform: rotate(-5deg);
 	}
 	.product-container{
 		@include mobile{
