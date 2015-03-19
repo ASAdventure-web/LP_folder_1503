@@ -344,6 +344,7 @@ img {
 .bottom-container .product-category {
   font-weight: 100; }
 .bottom-container .swatch {
+  border: 1px solid #9b9b9b;
   border-radius: 50%; }
 .bottom-container .logo-container {
   border-top: 2px dotted #ddd; }
