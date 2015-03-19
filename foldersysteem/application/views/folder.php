@@ -42,7 +42,7 @@
 							<?php } ?>
 						</div>
 					<?php } ?>
-					<div class="col-3 row-1 product-container"></div>
+					<div class="col-3 row-1 product-container mobile-hide"></div>
 					<?php $count++;
 					} ?>
 					</div>
@@ -83,6 +83,14 @@
 					<?php } ?>
 				</div>
 			<?php } ?>
+			<!-- print lookbook image -->
+			<?php if(isset($product['lookbook'])) { ?>
+				<div class="col-3 row-1 product-container mobile-hide" style="background: <?php echo $product['img'] ?>">
+					<a href="http://www.asadventure.com<?php echo $product['link'] ?>">
+						<button>
+							<?php echo $product['productnaam'] ?>
+						</button>
+			<?php	}  else {?>
 			<!-- print product -->
 			<div class="col-3 row-1 product-container <?php if(isset($product['exclusief'])) { print(' exclusive'); } if (isset($product['uitverkocht'])) { print(' sold'); }?>">
 				<a href="http://www.asadventure.com<?php echo $product['link'] ?>" alt="<?php echo $product['productnaam'] ?>" class="contentlink">
@@ -117,6 +125,7 @@
 						<?php } ?>
 						</div>
 					</div>
+					<?php } ?>
 				</a>
 			</div>
 			<?php $count++;
@@ -156,7 +165,7 @@
 				<?php } ?>
 			</div>
 		<?php } ?>
-		<div class="col-3 row-1 product-container"></div>
+		<div class="col-3 row-1 product-container mobile-hide"></div>
 		<?php $count++;
 		} ?>
 		</div>
