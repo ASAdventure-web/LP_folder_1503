@@ -26,10 +26,6 @@ $max-row-height: 2;
 
 //MIXINS
 
-//MEDIA-QUERIES
-
-
-
 @mixin desktop{
 	@media only screen and(min-width: #{$desktop}){
 		@content;
