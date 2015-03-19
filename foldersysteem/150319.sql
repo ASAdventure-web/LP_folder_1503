@@ -3,7 +3,11 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
+<<<<<<< HEAD:foldersysteem/150319.sql
 -- Generation Time: Mar 19, 2015 at 11:55 AM
+=======
+-- Generation Time: Mar 19, 2015 at 12:22 PM
+>>>>>>> master:foldersysteem/150319folder.sql
 -- Server version: 5.5.38
 -- PHP Version: 5.6.2
 
