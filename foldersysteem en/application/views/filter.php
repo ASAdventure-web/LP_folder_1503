@@ -8,59 +8,10 @@
 </head>
 <body>
 	<div id="lp-folder-wrapper">
-		<!-- Eerste categoriehoofding -->
-		<div class="content-row z-shadow">
-			<h2 class="categorie-titel"><?php echo $categorie ?></h2>
-		</div>
 		<!-- start eerste contentrow -->
 		<div class="content-row">
 		<!-- loop door producten -->
 		<?php foreach ($products as $product) { ?>
-			<!--Indien nieuwe categorie-->
-			<?php if ($product["categorie"] != $categorie) { ?>
-				<!-- rij afwerken -->
-				<?php if(( $count % 4 ) != 0 ) { 
-					if ($gridcount % 3 == 0) {
-						$photocount++;
-					}
-					$gridcount++; 
-					} ?>
-				<?php while(( $count % 4 ) != 0 ) { 
-					 if (($gridcount % 3 == 0) && ($count % 4 == 0) && ($photocount % 2 == 0)) { ?>
-						<div class="col-6 row-2 image-container">
-							<?php if(isset($photos[$photocount]['link'])) { ?>
-								<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
-							<?php } ?>	
-								<img src="../../images/beelden/<?php echo $photos[$photocount]['beeld'] ?>">
-							<?php if(isset($photos[$photocount]['link'])) { ?>
-								</a>
-							<?php } ?>
-						</div>
-					<?php } ?>
-					<?php if (($gridcount % 3 == 0) && ($count % 4 == 2) && ($photocount % 2 == 1)) { ?>
-						<div class="col-6 row-2 image-container right">
-							<?php if(isset($photos[$photocount]['link'])) { ?>
-								<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
-							<?php } ?>	
-								<img src="../../images/beelden/<?php echo $photos[$photocount]['beeld'] ?>">
-							<?php if(isset($photos[$photocount]['link'])) { ?>
-								</a>
-							<?php } ?>
-						</div>
-					<?php } ?>
-					<div class="col-3 row-1 product-container mobile-hide"></div>
-					<?php $count++;
-					} ?>
-					</div>
-				<!-- nieuwe rij initialiseren -->
-				<div class="content-row z-shadow">
-				<!-- categorie herdefiniëren -->
-					<?php $categorie = $product["categorie"]; ?>
-					<h2 class="categorie-titel"><?php echo $categorie ?></h2>
-								</div>
-				<div class="content-row">
-				<!-- end if -->
-				<?php	} ?>
 			<!-- print foto -->
 			<?php if (($gridcount % 3 == 0) && ($count % 4 == 0) && ($photocount % 2 == 0)) { ?>
 				<div class="col-6 row-2 image-container">
@@ -86,7 +37,7 @@
 			<?php } ?>
 			<!-- print lookbook image -->
 			<?php if(isset($product['lookbook'])) { ?>
-				<div class="col-3 row-1 product-container mobile-hide" style="background: url(../../images/producten/<?php echo $product['img'] ?>);">
+				<div class="col-3 row-1 product-container mobile-hide" style="background: url(../../images/producten/<?php echo $product['img'] ?>); <?php if(isset($product['specialeactie'])) { print($product['specialeactie'].';'); } ?>">
 					<a href="http://www.asadventure.com<?php echo $product['link'] ?>">
 						<span>
 							<?php echo $product['productnaam'] ?>
