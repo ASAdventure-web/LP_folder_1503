@@ -4,9 +4,9 @@
 **************************************/
 @font-face {
   font-family: 'Ventography';
-  src: url("../../fonts/ventography.eot");
+  src: url("../../fonts/ventography/ventography.eot");
   /* IE9 Compat Modes */
-  src: url("../../fonts/ventography.eot?#iefix") format("embedded-opentype"), url("../../fonts/ventography.woff") format("woff"), url("../../fonts/ventography.ttf") format("truetype"), url("../../fonts/ventography.svg#cafa9fb1a6115aa67dcd91cae32f723a") format("svg");
+  src: url("../../fonts/ventography/ventography.eot?#iefix") format("embedded-opentype"), url("../../fonts/ventography/ventography.woff") format("woff"), url("../../fonts/ventography/ventography.ttf") format("truetype"), url("../../fonts/ventography/ventography.svg#cafa9fb1a6115aa67dcd91cae32f723a") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: 400; }
@@ -332,9 +332,7 @@ img {
   line-height: 1;
   text-align: center;
   text-rendering: optimizeLegibility;
-  -webkit-transform: rotate(-5deg);
-      -ms-transform: rotate(-5deg);
-          transform: rotate(-5deg); }
+  transform: rotate(-5deg); }
 @media only screen and (max-width: 767px) {
   .content-row .product-container, .content-block .product-container {
     border-left: 1px solid #DDDDDD;
@@ -372,5 +370,3 @@ img {
   border-radius: 50%; }
 .bottom-container .logo-container {
   border-top: 2px dotted #ddd; }
-
-/*# sourceMappingURL=folder-maart.css.map */
