@@ -45,7 +45,7 @@ class Products extends CI_Controller {
 	public function junior()
 	{
 		$data['products'] = $this->products_model->get_products('junior');
-		$data['photos'] = $this->photo_model->get_photos();
+		$data['photos'] = $this->photo_model->get_photos('junior');
 		$data['count'] = 0;
 		$data['gridcount'] = 0;
 		$data['photocount'] = 0;
