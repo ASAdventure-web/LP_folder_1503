@@ -10,6 +10,14 @@
   /* Legacy iOS */
   font-style: normal;
   font-weight: 400; }
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../../fonts/proxima_nova/proxima_nova_extra_condensed.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/proxima_nova/proxima_nova_extra_condensed.eot?#iefix") format("embedded-opentype"), url("../../fonts/proxima_nova/proxima_nova_extra_condensed.woff") format("woff"), url("../../fonts/proxima_nova/proxima_nova_extra_condensed.ttf") format("truetype"), url("../../fonts/proxima_nova/proxima_nova_extra_condensed.svg#cafa9fb1a6115aa67dcd91cae32f723a") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400; }
 #lp-folder-wrapper {
   max-width: 1170px;
   width: 100%; }
@@ -220,14 +228,15 @@
   right: 0;
   z-index: 2;
   color: #ffffff;
-  font-family: 'Ventography';
-  font-size: 4em;
+  font-family: 'Proxima Nova';
+  font-size: 2.5em;
   -webkit-font-smoothing: antialiased;
-  font-weight: 100;
+  font-weight: 700;
   margin: 0;
-  padding: 2.5em 0;
+  padding: 4em 0;
   text-align: center;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase; }
 .content-row .product-container.sold-out-nl::before, .content-block .product-container.sold-out-nl::before {
   content: "Uitverkocht"; }
 .content-row .product-container.sold-out-fr::before, .content-block .product-container.sold-out-fr::before {
@@ -332,7 +341,9 @@ img {
   line-height: 1;
   text-align: center;
   text-rendering: optimizeLegibility;
-  transform: rotate(-5deg); }
+  -webkit-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+          transform: rotate(-5deg); }
 @media only screen and (max-width: 767px) {
   .content-row .product-container, .content-block .product-container {
     border-left: 1px solid #DDDDDD;
@@ -370,3 +381,5 @@ img {
   border-radius: 50%; }
 .bottom-container .logo-container {
   border-top: 2px dotted #ddd; }
+
+/*# sourceMappingURL=folder-maart.css.map */
