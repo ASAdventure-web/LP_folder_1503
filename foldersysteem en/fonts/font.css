@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Ventography';
+  src: url('ventography.eot'); /* IE9 Compat Modes */
+  src: url('ventography.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('ventography.woff') format('woff'), /* Modern Browsers */
+       url('ventography.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('ventography.svg#cafa9fb1a6115aa67dcd91cae32f723a') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
