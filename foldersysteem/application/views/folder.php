@@ -19,6 +19,12 @@
 			<!--Indien nieuwe categorie-->
 			<?php if ($product["categorie"] != $categorie) { ?>
 				<!-- rij afwerken -->
+				<?php if(( $count % 4 ) != 0 ) { 
+					if ($gridcount % 3 == 0) {
+						$photocount++;
+					}
+					$gridcount++; 
+					} ?>
 				<?php while(( $count % 4 ) != 0 ) { 
 					 if (($gridcount % 3 == 0) && ($count % 4 == 0) && ($photocount % 2 == 0)) { ?>
 						<div class="col-6 row-2 image-container">
@@ -53,11 +59,6 @@
 					<h2 class="categorie-titel"><?php echo $categorie ?></h2>
 								</div>
 				<div class="content-row">
-				<?php 
-					if ($gridcount % 3 == 0) {
-						$photocount++;
-					}
-					$gridcount++; ?>
 				<!-- end if -->
 				<?php	} ?>
 			<!-- print foto -->
@@ -85,14 +86,17 @@
 			<?php } ?>
 			<!-- print lookbook image -->
 			<?php if(isset($product['lookbook'])) { ?>
-				<div class="col-3 row-1 product-container mobile-hide" style="background: <?php echo $product['img'] ?>">
+				<div class="col-3 row-1 product-container mobile-hide" style="background: url(images/producten/<?php echo $product['img'] ?>);">
 					<a href="http://www.asadventure.com<?php echo $product['link'] ?>">
-						<button>
+						<span>
 							<?php echo $product['productnaam'] ?>
+						</span>
+						<button>
+							Naar de lookbook
 						</button>
 			<?php	}  else {?>
 			<!-- print product -->
-			<div class="col-3 row-1 product-container <?php if(isset($product['exclusief'])) { print(' exclusive'); } if (isset($product['uitverkocht'])) { print(' sold'); }?>">
+			<div class="col-3 row-1 product-container <?php if(isset($product['exclusief'])) { print(' exclusive'); } if (isset($product['uitverkocht'])) { print(' sold-out'); }?>">
 				<a href="http://www.asadventure.com<?php echo $product['link'] ?>" alt="<?php echo $product['productnaam'] ?>" class="contentlink">
 					<img class="product-image" src="images/producten/<?php echo $product['img'] ?>" title="<?php echo $product['productnaam'].' '.$product['productomschrijving'] ?>">
 					<div class="bottom-container">
