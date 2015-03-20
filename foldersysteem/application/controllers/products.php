@@ -78,7 +78,7 @@ class Products extends CI_Controller {
 	public function bike()
 	{
 		$data['products'] = $this->products_model->get_products('bike');
-		$data['photos'] = $this->photo_model->get_photos();
+		$data['photos'] = $this->photo_model->get_photos('bike');
 		$data['count'] = 0;
 		$data['gridcount'] = 0;
 		$data['photocount'] = 0;
@@ -100,7 +100,7 @@ class Products extends CI_Controller {
 	public function picnic()
 	{
 		$data['products'] = $this->products_model->get_products('picnic');
-		$data['photos'] = $this->photo_model->get_photos();
+		$data['photos'] = $this->photo_model->get_photos('picnic');
 		$data['count'] = 0;
 		$data['gridcount'] = 0;
 		$data['photocount'] = 0;
@@ -111,7 +111,7 @@ class Products extends CI_Controller {
 	public function uitrusting()
 	{
 		$data['products'] = $this->products_model->get_products('uitrusting');
-		$data['photos'] = $this->photo_model->get_photos();
+		$data['photos'] = $this->photo_model->get_photos('uitrusting');
 		$data['count'] = 0;
 		$data['gridcount'] = 0;
 		$data['photocount'] = 0;
