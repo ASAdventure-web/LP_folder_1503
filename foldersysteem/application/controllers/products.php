@@ -56,7 +56,7 @@ class Products extends CI_Controller {
 	public function fashion()
 	{
 		$data['products'] = $this->products_model->get_products('fashion');
-		$data['photos'] = $this->photo_model->get_photos();
+		$data['photos'] = $this->photo_model->get_photos('fashion');
 		$data['count'] = 0;
 		$data['gridcount'] = 0;
 		$data['photocount'] = 0;
