@@ -67,7 +67,7 @@ class Products extends CI_Controller {
 	public function run()
 	{
 		$data['products'] = $this->products_model->get_products('run');
-		$data['photos'] = $this->photo_model->get_photos();
+		$data['photos'] = $this->photo_model->get_photos('run');
 		$data['count'] = 0;
 		$data['gridcount'] = 0;
 		$data['photocount'] = 0;
