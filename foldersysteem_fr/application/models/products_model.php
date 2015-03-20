@@ -1,5 +1,5 @@
 <?php
-class Products_model extends CI_Model {
+class Products_fr_model extends CI_Model {
 
 	public function __construct()
 	{
@@ -14,9 +14,8 @@ class Products_model extends CI_Model {
 			return $query->result_array();
 		}
 		else {
-			$query = $this->db->query("SELECT `Products_fr`.*, `Merken`.* FROM (`Products_fr`) LEFT JOIN `Merken` ON `Products_fr`.`merk` = `Merken`.`merknaam` WHERE `Products_fr`.`".$filter."` IS NOT NULL");
+			$query = $this->db->query("SELECT `Products_fr`.*, `Merken`.* FROM (`Products_fr`) LEFT JOIN `Merken` ON `Products_fr`.`merk` = `Merken`.`merknaam` WHERE `Products_fr`.`".$filter."` IS NOT NULL order by FIELD(categorie,'Outdoor','Fashion','Run','Bike'), volgorde ASC");
 			return $query->result_array();
-
 		}
 
 	}
