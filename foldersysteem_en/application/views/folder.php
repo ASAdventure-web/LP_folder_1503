@@ -95,7 +95,7 @@
 							<?php echo $product['productnaam'] ?>
 						</span>
 						<button>
-							Naar de lookbook
+							View the lookbook
 						</button>
 			<?php	}  else {?>
 			<!-- print product -->
