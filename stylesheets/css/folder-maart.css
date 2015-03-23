@@ -222,9 +222,6 @@
 .content-row .product-container.lookbook, .content-block .product-container.lookbook {
   background-repeat: no-repeat !important;
   background-size: cover !important; }
-  @media only screen and (max-width: 1199px) {
-    .content-row .product-container.lookbook, .content-block .product-container.lookbook {
-      background-size: contain !important; } }
   @media only screen and (max-width: 767px) {
     .content-row .product-container.lookbook, .content-block .product-container.lookbook {
       background-size: cover !important; } }
@@ -234,10 +231,12 @@
     background: none;
     height: 100%;
     text-decoration: none;
-    -webkit-transition: background .1s linear;
-            transition: background .1s linear; }
+    transition: background .1s linear; }
     .content-row .product-container.lookbook a:hover, .content-block .product-container.lookbook a:hover {
       background: rgba(255, 255, 255, 0.2); }
+      @media only screen and (max-width: 1199px) {
+        .content-row .product-container.lookbook a:hover, .content-block .product-container.lookbook a:hover {
+          background: transparent; } }
   .content-row .product-container.lookbook span, .content-block .product-container.lookbook span {
     color: #ffffff;
     font-family: 'Proxima Nova';
@@ -247,6 +246,12 @@
     text-align: center;
     text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 0, 0, 0.8);
     text-transform: uppercase; }
+    @media only screen and (max-width: 1199px) {
+      .content-row .product-container.lookbook span, .content-block .product-container.lookbook span {
+        padding: 55% 18% 30%; } }
+    @media only screen and (max-width: 979px) {
+      .content-row .product-container.lookbook span, .content-block .product-container.lookbook span {
+        font-size: 1.5em; } }
   .content-row .product-container.lookbook button, .content-block .product-container.lookbook button {
     background: rgba(0, 0, 0, 0.2);
     border: 2px solid #ffffff;
@@ -263,12 +268,17 @@
     padding: .7em 1em;
     text-align: center;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.6);
-    -webkit-transition: background .2s linear;
-            transition: background .2s linear; }
+    transition: background .2s linear; }
     .content-row .product-container.lookbook button:active, .content-row .product-container.lookbook button:hover, .content-block .product-container.lookbook button:active, .content-block .product-container.lookbook button:hover {
       outline: none; }
     .content-row .product-container.lookbook button:hover, .content-block .product-container.lookbook button:hover {
       background: rgba(0, 0, 0, 0.4); }
+      @media only screen and (max-width: 1199px) {
+        .content-row .product-container.lookbook button:hover, .content-block .product-container.lookbook button:hover {
+          background: rgba(0, 0, 0, 0.2); } }
+    @media only screen and (max-width: 979px) {
+      .content-row .product-container.lookbook button, .content-block .product-container.lookbook button {
+        font-size: .8em; } }
 .content-row .product-container.sold-out-nl::before, .content-row .product-container.sold-out-fr::before, .content-row .product-container.sold-out-en::before, .content-block .product-container.sold-out-nl::before, .content-block .product-container.sold-out-fr::before, .content-block .product-container.sold-out-en::before {
   position: absolute;
   top: 0;
@@ -394,9 +404,7 @@ img {
   line-height: 1;
   text-align: center;
   text-rendering: optimizeLegibility;
-  -webkit-transform: rotate(-5deg);
-      -ms-transform: rotate(-5deg);
-          transform: rotate(-5deg); }
+  transform: rotate(-5deg); }
 .content-row .product-container.sold-out-nl::before, .content-row .product-container.sold-out-fr::before, .content-row .product-container.sold-out-en::before, .content-block .product-container.sold-out-nl::before, .content-block .product-container.sold-out-fr::before, .content-block .product-container.sold-out-en::before {
   background: rgba(0, 0, 0, 0.7);
   color: #ffffff;
@@ -471,5 +479,3 @@ img {
   border-radius: 50%; }
 .bottom-container .logo-container {
   border-top: 2px dotted #ddd; }
-
-/*# sourceMappingURL=folder-maart.css.map */
