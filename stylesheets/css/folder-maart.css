@@ -234,6 +234,9 @@
     transition: background .1s linear; }
     .content-row .product-container.lookbook a:hover, .content-block .product-container.lookbook a:hover {
       background: rgba(255, 255, 255, 0.2); }
+      @media only screen and (max-width: 1199px) {
+        .content-row .product-container.lookbook a:hover, .content-block .product-container.lookbook a:hover {
+          background: transparent; } }
   .content-row .product-container.lookbook span, .content-block .product-container.lookbook span {
     color: #ffffff;
     font-family: 'Proxima Nova';
@@ -243,6 +246,12 @@
     text-align: center;
     text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 0, 0, 0.8);
     text-transform: uppercase; }
+    @media only screen and (max-width: 1199px) {
+      .content-row .product-container.lookbook span, .content-block .product-container.lookbook span {
+        padding: 55% 18% 30%; } }
+    @media only screen and (max-width: 979px) {
+      .content-row .product-container.lookbook span, .content-block .product-container.lookbook span {
+        font-size: 1.5em; } }
   .content-row .product-container.lookbook button, .content-block .product-container.lookbook button {
     background: rgba(0, 0, 0, 0.2);
     border: 2px solid #ffffff;
@@ -262,6 +271,12 @@
     transition: background .2s linear; }
     .content-row .product-container.lookbook button:hover, .content-block .product-container.lookbook button:hover {
       background: rgba(0, 0, 0, 0.4); }
+      @media only screen and (max-width: 1199px) {
+        .content-row .product-container.lookbook button:hover, .content-block .product-container.lookbook button:hover {
+          background: rgba(0, 0, 0, 0.2); } }
+    @media only screen and (max-width: 979px) {
+      .content-row .product-container.lookbook button, .content-block .product-container.lookbook button {
+        font-size: .8em; } }
 .content-row .product-container.sold-out-nl::before, .content-row .product-container.sold-out-fr::before, .content-row .product-container.sold-out-en::before, .content-block .product-container.sold-out-nl::before, .content-block .product-container.sold-out-fr::before, .content-block .product-container.sold-out-en::before {
   position: absolute;
   top: 0;
