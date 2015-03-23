@@ -34,6 +34,22 @@
 		transform: rotate(-5deg);
 	}
 	.product-container{
+		&.exclusive-nl::after, &.exclusive-fr::after, &.exclusive-en::after{
+			content: "";
+			text-align: right;
+		}
+		&.exclusive-nl::after{
+			background: url(../../images/overlays/exclusief-nl.png);
+			background-size: contain;
+		}
+		&.exclusive-fr::after{
+			background: url(../../images/overlays/exclusief-fr.png);
+			background-size: contain;
+		}
+		&.exclusive-en::after{
+			background: url(../../images/overlays/exclusief-en.png);
+			background-size: contain;
+		}
 		@include mobile{
 			border-left: 1px solid #DDDDDD;
 			border-bottom: 1px solid #DDDDDD;
