@@ -79,23 +79,14 @@
 	}
 	.product-container{
 		&.sold-out-nl::before, &.sold-out-fr::before, &.sold-out-en::before{
-			background: rgba(0,0,0,0.7);
 			position: absolute;
 				top: 0;
 				bottom: 0;
 				left: 0;
 				right: 0;
 				z-index: 2;
-			color: #ffffff;
-			font-family: 'Proxima Nova';
-			font-size: 2.5em;
-			-webkit-font-smoothing: antialiased;
-			font-weight: 700;
 			margin: 0;
 			padding: 4em 0;
-			text-align: center;
-			text-rendering: optimizeLegibility;
-			text-transform: uppercase;
 		}
 		&.sold-out-nl::before{
 			content: "Uitverkocht";
@@ -106,8 +97,6 @@
 		&.sold-out-en::before{
 			content: "Sold Out";
 		}
-
-
 
 		@include mobile{
 			border-left: 1px solid #DDDDDD;
