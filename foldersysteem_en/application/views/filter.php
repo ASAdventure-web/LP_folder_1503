@@ -37,7 +37,7 @@
 			<?php } ?>
 			<!-- print lookbook image -->
 			<?php if(isset($product['lookbook'])) { ?>
-				<div class="col-3 row-1 product-container mobile-hide" style="background: url(../../images/producten/<?php echo $product['img'] ?>); <?php if(isset($product['specialeactie'])) { print($product['specialeactie'].';'); } ?>">
+				<div class="col-3 row-1 product-container lookbook" style="background: url(../../images/producten/<?php echo $product['img'] ?>); <?php if(isset($product['specialeactie'])) { print($product['specialeactie'].';'); } ?>">
 					<a href="http://www.asadventure.com<?php echo $product['link'] ?>">
 						<span>
 							<?php echo $product['productnaam'] ?>
