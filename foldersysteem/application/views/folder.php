@@ -48,7 +48,7 @@
 							<?php } ?>
 						</div>
 					<?php } ?>
-					<div class="col-3 row-1 product-container mobile-hide"></div>
+					<div class="col-3 row-1 product-container lookbook"></div>
 					<?php $count++;
 					} ?>
 					</div>
@@ -86,7 +86,7 @@
 			<?php } ?>
 			<!-- print lookbook image -->
 			<?php if(isset($product['lookbook'])) { ?>
-				<div class="col-3 row-1 product-container mobile-hide" style="background: url(../../images/producten/<?php echo $product['img'] ?>);">
+				<div class="col-3 row-1 product-container lookbook" style="background: url(../../images/producten/<?php echo $product['img'] ?>);">
 					<a href="http://www.asadventure.com<?php echo $product['link'] ?>">
 						<span>
 							<?php echo $product['productnaam'] ?>
@@ -96,7 +96,7 @@
 						</button>
 			<?php	}  else {?>
 			<!-- print product -->
-			<div class="col-3 row-1 product-container <?php if(isset($product['exclusief'])) { print('exclusive'); } if (isset($product['uitverkocht'])) { print('sold-out-nl'); }?>">
+			<div class="col-3 row-1 product-container <?php if(isset($product['exclusief'])) { print(' exclusive-nl'); } if (isset($product['uitverkocht'])) { print(' sold-out-nl'); }?>">
 				<a href="http://www.asadventure.com<?php echo $product['link'] ?>" alt="<?php echo $product['productnaam'] ?>" class="contentlink">
 					<img class="product-image" src="../../images/producten/<?php echo $product['img'] ?>" title="<?php echo $product['productnaam'].' '.$product['productomschrijving'] ?>">
 					<div class="bottom-container">
@@ -169,7 +169,7 @@
 				<?php } ?>
 			</div>
 		<?php } ?>
-		<div class="col-3 row-1 product-container mobile-hide"></div>
+		<div class="col-3 row-1 product-container lookbook"></div>
 		<?php $count++;
 		} ?>
 		</div>

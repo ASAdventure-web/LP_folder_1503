@@ -78,24 +78,69 @@
 		display: table;
 	}
 	.product-container{
+		&.lookbook{
+			background-repeat: no-repeat !important;
+			background-size: cover !important;
+			@include tablet-landscape{
+				background-size: contain !important;
+			}
+			@include mobile{
+				background-size: cover !important;
+			}
+			a, span, button{
+				display: block;
+			}
+			a{
+				background: none;
+				height: 100%;
+				text-decoration: none;
+				transition: background .1s linear;
+				&:hover{
+					background: rgba(255,255,255,.2);
+				}
+			}
+			span{
+				color: #ffffff;
+				font-family: 'Proxima Nova';
+				font-size: 2em;
+				font-weight: 400;
+				padding: 55% 18% 40%;
+				text-align: center;
+				text-shadow: 	2px 3px 4px rgba(0,0,0,.7),
+											0 0 20px rgba(0,0,0,.8);
+				text-transform: uppercase;
+			}
+			button{
+				background: rgba(0,0,0,0.2);
+        border: 2px solid #ffffff;
+        border-radius: 0;
+        border-spacing: 0;
+        box-shadow: 2px 3px 4px rgba(0,0,0,.2);
+        color: #ffffff;
+        cursor: pointer;
+        font-family: 'Open Sans', 'OpenSans', arial, sans-serif;
+        font-size: 1em;
+        font-weight: normal;
+        line-height: 1;
+        margin: 0 auto;
+        padding: .7em 1em;
+        text-align: center;
+        text-shadow: 1px 1px 0 rgba(0,0,0,.6);
+        transition: background .2s linear;
+        &:hover{
+        	background: rgba(0,0,0,.4);
+        }
+			}
+		}
 		&.sold-out-nl::before, &.sold-out-fr::before, &.sold-out-en::before{
-			background: rgba(0,0,0,0.7);
 			position: absolute;
 				top: 0;
 				bottom: 0;
 				left: 0;
 				right: 0;
 				z-index: 2;
-			color: #ffffff;
-			font-family: 'Proxima Nova';
-			font-size: 2.5em;
-			-webkit-font-smoothing: antialiased;
-			font-weight: 700;
 			margin: 0;
 			padding: 4em 0;
-			text-align: center;
-			text-rendering: optimizeLegibility;
-			text-transform: uppercase;
 		}
 		&.sold-out-nl::before{
 			content: "Uitverkocht";
@@ -107,8 +152,19 @@
 			content: "Sold Out";
 		}
 
-
-
+		&.exclusive-nl::after, &.exclusive-fr::after, &.exclusive-en::after{
+			height: 82px;
+			margin: 0;
+			position: absolute;
+				top: 0;
+				right: 0;
+				z-index: 1;
+			width: 82px;
+			@include tablet-portrait{
+				height:60px;
+				width:60px;
+			}
+		}
 		@include mobile{
 			border-left: 1px solid #DDDDDD;
 			border-bottom: 1px solid #DDDDDD;
