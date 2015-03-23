@@ -107,7 +107,24 @@
 			content: "Sold Out";
 		}
 
-
+		&.exclusive-nl::after, &.exclusive-fr::after, &.exclusive-en::after{
+			position: absolute;
+				top: 0;
+				right: 0;
+				z-index: 1;
+			margin: 0;
+			padding: 4em 0;
+			text-align: right;
+		}
+		&.exclusive-nl::after{
+			background: red;
+		}
+		&.exclusive-fr::after{
+			background: yellow;
+		}
+		&.exclusive-en::after{
+			background: green;
+		}
 
 		@include mobile{
 			border-left: 1px solid #DDDDDD;
