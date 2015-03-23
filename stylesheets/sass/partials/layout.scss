@@ -81,9 +81,6 @@
 		&.lookbook{
 			background-repeat: no-repeat !important;
 			background-size: cover !important;
-			@include tablet-landscape{
-				background-size: contain !important;
-			}
 			@include mobile{
 				background-size: cover !important;
 			}
@@ -97,6 +94,9 @@
 				transition: background .1s linear;
 				&:hover{
 					background: rgba(255,255,255,.2);
+					@include tablet-landscape{
+						background: transparent;
+					}
 				}
 			}
 			span{
@@ -109,6 +109,12 @@
 				text-shadow: 	2px 3px 4px rgba(0,0,0,.7),
 											0 0 20px rgba(0,0,0,.8);
 				text-transform: uppercase;
+				@include tablet-landscape{
+					padding: 55% 18% 30%;
+				}
+				@include tablet-portrait{
+					font-size: 1.5em;
+				}
 			}
 			button{
 				background: rgba(0,0,0,0.2);
@@ -132,7 +138,13 @@
         }
         &:hover{
         	background: rgba(0,0,0,.4);
+        	@include tablet-landscape{
+        		background: rgba(0,0,0,0.2);
+        	}
         }
+        @include tablet-portrait{
+					font-size: .8em;
+				}
 			}
 		}
 		&.sold-out-nl::before, &.sold-out-fr::before, &.sold-out-en::before{
