@@ -394,6 +394,9 @@ img {
   color: #efefef;
   font-size: .75em;
   text-transform: uppercase; }
+  @media only screen and (max-width: 1199px) {
+    .bottom-container .price-tag .special {
+      font-size: .5em; } }
 .bottom-container .price-tag .barred-price {
   font-size: .7em;
   line-height: 1;

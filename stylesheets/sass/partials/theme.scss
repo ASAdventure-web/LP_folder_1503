@@ -96,6 +96,9 @@
 			color: #efefef;
 			font-size: .75em;
 			text-transform: uppercase;
+			@include tablet-landscape{
+				font-size: .5em;
+			}
 		}
 		.barred-price{
 			font-size: .7em;
