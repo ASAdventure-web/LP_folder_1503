@@ -43,7 +43,7 @@
 							<?php echo $product['productnaam'] ?>
 						</span>
 						<button>
-							View the lookbook
+							Naar de lookbook
 						</button>
 			<?php	}  else {?>
 			<!-- print product -->

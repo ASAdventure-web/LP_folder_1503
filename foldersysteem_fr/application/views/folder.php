@@ -13,22 +13,7 @@
 	<div id="lp-folder-wrapper">
 		<!-- Eerste categoriehoofding -->
 		<div class="content-row z-shadow">
-			<h2 class="categorie-titel"><?php 
-				switch ($categorie) {
-				    case 'Fashion':
-				        echo "Prêt-à-porter";
-				        break;
-				    case 'Bike':
-				        echo "Cyclisme";
-				        break;
-				    case 'Run':
-				        echo "Course à pied";
-				        break;
-				    case 'Outdoor':
-				        echo "Outdoor";
-				        break;
-				} ?>
-			</h2>
+			<h2 class="categorie-titel"><?php echo $categorie ?></h2>
 		</div>
 		<!-- start eerste contentrow -->
 		<div class="content-row">
@@ -74,22 +59,7 @@
 				<div class="content-row z-shadow">
 				<!-- categorie herdefiniëren -->
 					<?php $categorie = $product["categorie"]; ?>
-					<h2 class="categorie-titel"><?php 
-						switch ($categorie) {
-						    case 'Fashion':
-						        echo "Prêt-à-porter";
-						        break;
-						    case 'Bike':
-						        echo "Cyclisme";
-						        break;
-						    case 'Run':
-						        echo "Course à pied";
-						        break;
-						    case 'Outdoor':
-						        echo "Outdoor";
-						        break;
-						} ?>
-					</h2>
+					<h2 class="categorie-titel"><?php echo $categorie ?></h2>
 								</div>
 				<div class="content-row">
 				<!-- end if -->
@@ -125,7 +95,7 @@
 							<?php echo $product['productnaam'] ?>
 						</span>
 						<button>
-							Regardez le lookbook
+							Naar de lookbook
 						</button>
 			<?php	}  else {?>
 			<!-- print product -->
