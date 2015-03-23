@@ -265,6 +265,8 @@
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.6);
     -webkit-transition: background .2s linear;
             transition: background .2s linear; }
+    .content-row .product-container.lookbook button:active, .content-row .product-container.lookbook button:focus, .content-row .product-container.lookbook button:hover, .content-block .product-container.lookbook button:active, .content-block .product-container.lookbook button:focus, .content-block .product-container.lookbook button:hover {
+      outline: none; }
     .content-row .product-container.lookbook button:hover, .content-block .product-container.lookbook button:hover {
       background: rgba(0, 0, 0, 0.4); }
 .content-row .product-container.sold-out-nl::before, .content-row .product-container.sold-out-fr::before, .content-row .product-container.sold-out-en::before, .content-block .product-container.sold-out-nl::before, .content-block .product-container.sold-out-fr::before, .content-block .product-container.sold-out-en::before {
