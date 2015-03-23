@@ -18,7 +18,7 @@
 					<?php if(isset($photos[$photocount]['link'])) { ?>
 						<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 					<?php } ?>	
-						<img src="../../images/beelden/<?php echo $photos[$photocount]['beeld'] ?>">
+						<img src="../../images/beelden/en/<?php echo $photos[$photocount]['beeld'] ?>">
 					<?php if(isset($photos[$photocount]['link'])) { ?>
 						</a>
 					<?php } ?>
@@ -29,7 +29,7 @@
 					<?php if(isset($photos[$photocount]['link'])) { ?>
 						<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 					<?php } ?>	
-						<img src="../../images/beelden/<?php echo $photos[$photocount]['beeld'] ?>">
+						<img src="../../images/beelden/en/<?php echo $photos[$photocount]['beeld'] ?>">
 					<?php if(isset($photos[$photocount]['link'])) { ?>
 						</a>
 					<?php } ?>
@@ -103,7 +103,7 @@
 				<?php if(isset($photos[$photocount]['link'])) { ?>
 					<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 				<?php } ?>	
-					<img src="../../images/beelden/<?php echo $photos[$photocount]['beeld'] ?>">
+					<img src="../../images/beelden/en/<?php echo $photos[$photocount]['beeld'] ?>">
 				<?php if(isset($photos[$photocount]['link'])) { ?>
 					</a>
 				<?php } ?>
@@ -114,7 +114,7 @@
 				<?php if(isset($photos[$photocount]['link'])) { ?>
 					<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 				<?php } ?>	
-					<img src="../../images/beelden/<?php echo $photos[$photocount]['beeld'] ?>">
+					<img src="../../images/beelden/en/<?php echo $photos[$photocount]['beeld'] ?>">
 				<?php if(isset($photos[$photocount]['link'])) { ?>
 					</a>
 				<?php } ?>
