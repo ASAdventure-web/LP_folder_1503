@@ -18,7 +18,7 @@
 					<?php if(isset($photos[$photocount]['link'])) { ?>
 						<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 					<?php } ?>	
-						<img src="../../images/beelden/<?php echo $photos[$photocount]['beeld'] ?>">
+						<img src="../../images/beelden/nl/<?php echo $photos[$photocount]['beeld'] ?>">
 					<?php if(isset($photos[$photocount]['link'])) { ?>
 						</a>
 					<?php } ?>
@@ -29,7 +29,7 @@
 					<?php if(isset($photos[$photocount]['link'])) { ?>
 						<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 					<?php } ?>	
-						<img src="../../images/beelden/<?php echo $photos[$photocount]['beeld'] ?>">
+						<img src="../../images/beelden/nl/<?php echo $photos[$photocount]['beeld'] ?>">
 					<?php if(isset($photos[$photocount]['link'])) { ?>
 						</a>
 					<?php } ?>
@@ -37,7 +37,7 @@
 			<?php } ?>
 			<!-- print lookbook image -->
 			<?php if(isset($product['lookbook'])) { ?>
-				<div class="col-3 row-1 product-container mobile-hide" style="background: url(../../images/producten/<?php echo $product['img'] ?>); <?php if(isset($product['specialeactie'])) { print($product['specialeactie'].';'); } ?>">
+				<div class="col-3 row-1 product-container lookbook" style="background: url(../../images/producten/<?php echo $product['img'] ?>); <?php if(isset($product['specialeactie'])) { print($product['specialeactie'].';'); } ?>">
 					<a href="http://www.asadventure.com<?php echo $product['link'] ?>">
 						<span>
 							<?php echo $product['productnaam'] ?>
@@ -103,7 +103,7 @@
 				<?php if(isset($photos[$photocount]['link'])) { ?>
 					<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 				<?php } ?>	
-					<img src="../../images/beelden/<?php echo $photos[$photocount]['beeld'] ?>">
+					<img src="../../images/beelden/nl/<?php echo $photos[$photocount]['beeld'] ?>">
 				<?php if(isset($photos[$photocount]['link'])) { ?>
 					</a>
 				<?php } ?>
@@ -114,7 +114,7 @@
 				<?php if(isset($photos[$photocount]['link'])) { ?>
 					<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 				<?php } ?>	
-					<img src="../../images/beelden/<?php echo $photos[$photocount]['beeld'] ?>">
+					<img src="../../images/beelden/nl/<?php echo $photos[$photocount]['beeld'] ?>">
 				<?php if(isset($photos[$photocount]['link'])) { ?>
 					</a>
 				<?php } ?>
