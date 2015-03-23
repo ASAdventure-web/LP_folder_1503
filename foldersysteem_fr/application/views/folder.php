@@ -11,6 +11,10 @@
 </head>
 <body>
 	<div id="lp-folder-wrapper">
+		<!-- Header -->
+		<div class="video-wrapper">
+			<iframe src="https://player.vimeo.com/video/122990846" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div>
 		<!-- Eerste categoriehoofding -->
 		<div class="content-row z-shadow">
 						<h2 class="categorie-titel"><?php 

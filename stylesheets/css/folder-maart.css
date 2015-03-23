@@ -335,6 +335,19 @@ img {
       max-width: 210px;
       width: 100%; } }
 
+.video-wrapper {
+  padding-bottom: 37.7%;
+  position: relative;
+  width: 100%; }
+  .video-wrapper iframe {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%; }
+
 .bottom-container {
   box-sizing: border-box;
   padding: 0 4%;
