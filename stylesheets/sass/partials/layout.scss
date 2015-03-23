@@ -98,6 +98,19 @@
 			content: "Sold Out";
 		}
 
+		&.exclusive-nl::after, &.exclusive-fr::after, &.exclusive-en::after{
+			height: 82px;
+			margin: 0;
+			position: absolute;
+				top: 0;
+				right: 0;
+				z-index: 1;
+			width: 82px;
+			@include tablet-portrait{
+				height:60px;
+				width:60px;
+			}
+		}
 		@include mobile{
 			border-left: 1px solid #DDDDDD;
 			border-bottom: 1px solid #DDDDDD;
