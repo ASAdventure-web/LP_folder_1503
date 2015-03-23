@@ -1,0 +1,51 @@
+//VARIABLES
+$desktop: 1200px;
+$desktop-wrapper: 1170px;
+
+$tablet-landscape: 1199px;
+$tablet-landscape-wrapper: 940px;
+
+$tablet-portrait: 979px;
+$tablet-portrait-wrapper: 724px;
+
+$mobile: 767px;
+$mobile-wrapper: 100%;
+
+$num-cols: 12;
+$mob-num-cols: 2;
+$num-gutters: $num-cols - 1;
+$mob-num-gutters: $mob-num-cols - 1;
+$gutter-width: 1px;
+$mob-gutter-width: percentage(1/360);
+$desktop-col-width: ($desktop-wrapper - ($gutter-width * ($num-cols - 1))) / $num-cols;
+$tablet-landscape-col-width: ($tablet-landscape-wrapper - ($gutter-width * ($num-cols - 1))) / $num-cols;
+$tablet-portrait-col-width: ($tablet-portrait-wrapper - ($gutter-width * ($num-cols - 1))) / $num-cols;
+$mob-col-width: ($mobile-wrapper - ($mob-gutter-width * ($mob-num-cols - 1))) / $mob-num-cols;
+$row-height: 421px;
+$max-row-height: 2;
+
+//MIXINS
+
+@mixin desktop{
+	@media only screen and(min-width: #{$desktop}){
+		@content;
+	}
+}
+
+@mixin tablet-landscape{
+	@media only screen and(max-width: #{$tablet-landscape}){
+		@content;
+	}
+}
+
+@mixin tablet-portrait{
+	@media only screen and(max-width: #{$tablet-portrait}){
+		@content;
+	}
+}
+
+@mixin mobile{
+	@media only screen and(max-width: #{$mobile}){
+		@content;
+	}
+}

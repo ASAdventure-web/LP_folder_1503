@@ -1,0 +1,91 @@
+//WRAPPER
+#lp-folder-wrapper{
+	background: #ddd;
+	color: #454545;
+	font-family: "Open Sans", Helvetica-Neue, Arial, sans-serif;
+	@include mobile{
+		background: #ffffff;
+		overflow: hidden;
+	}
+}
+
+//CONTENT ROW
+.content-row, .content-block{
+	&.z-shadow{
+		//background: url(../../images/test.jpg);
+		background: #ffffff;
+		border-top: 1px solid #dddddd;
+		box-shadow: 0 14px 3px -10px rgba(0,0,0,.04), 0 -12px 3px -10px rgba(0,0,0,.04);
+	}
+	.categorie-titel{
+		color: #9b9b9b;
+		//color: rgba(114,102,95,.8);
+		font-family: 'Ventography';
+		font-size: 5em;
+		font-weight: 400;
+		-webkit-font-smoothing: antialiased;
+		letter-spacing: 2px;
+		line-height: 1;
+		//padding-left: 2.5em;
+		text-align: center;
+		text-rendering: optimizeLegibility;
+		//text-shadow: 1px 1px 6px #fff, 0 0 0 #000, 1px 4px 6px #fff;
+		//text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+		transform: rotate(-5deg);
+	}
+	.product-container{
+		@include mobile{
+			border-left: 1px solid #DDDDDD;
+			border-bottom: 1px solid #DDDDDD;
+		}
+	}
+}
+
+//GENERAL LINK
+.contentlink {
+	color: inherit;
+}
+
+//BOTTOM CONTAINER
+.bottom-container{
+	.price-tag{
+		.special{
+			background: #AF151E;
+			color: #efefef;
+			font-size: .75em;
+			text-transform: uppercase;
+		}
+		.barred-price{
+			font-size: .7em;
+			line-height: 1;
+			text-decoration: line-through;
+		}
+		.new-price{
+			color: #AF151E;
+			font-size: 1.6em;
+			font-weight: 600;
+			line-height: 1;
+		}
+		.currency{
+			font-size: .6em;
+		}
+	}
+	h3{
+		font-size: 1em;
+		font-weight: 600;
+
+		@include tablet-landscape{
+			font-size: .8em;
+		}
+	}
+	.product-category{
+		font-weight: 100;
+	}
+	.swatch{
+		border: 1px solid #9b9b9b;
+		border-radius: 50%;
+	}
+	.logo-container{
+		border-top: 2px dotted #ddd;
+	}
+}
