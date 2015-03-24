@@ -14,6 +14,7 @@ class Products extends CI_Controller {
 		$data['products'] = $this->products_model->get_products();
 		$data['photos'] = $this->photo_model->get_photos();
 		$data['links'] = $this->links_model->get_links();	
+		$data['active'] = "Alle folderproducten";
 		$data['count'] = 0;
 		$data['gridcount'] = 0;
 		$data['photocount'] = 0;
