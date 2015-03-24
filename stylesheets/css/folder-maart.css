@@ -184,6 +184,7 @@
 #lp-folder-wrapper .main-menu {
   background: #ffffff;
   color: #AF151E;
+  display: flex;
   font-weight: bold;
   margin: 0;
   padding: 2em 0;
@@ -194,11 +195,14 @@
     content: "";
     display: table; }
   #lp-folder-wrapper .main-menu li {
+    box-sizing: border-box;
     float: left;
     list-style-type: none;
     padding: 0 1.2em; }
+    #lp-folder-wrapper .main-menu li:first-child {
+      border-right: 1px solid #9b9b9b; }
     #lp-folder-wrapper .main-menu li:nth-last-child(3) {
-      border-left: 2px solid #9b9b9b; }
+      border-left: 1px solid #9b9b9b; }
     @media only screen and (max-width: 1199px) {
       #lp-folder-wrapper .main-menu li {
         font-size: .8em; } }
@@ -214,6 +218,22 @@
     transition: .1s color linear; }
     #lp-folder-wrapper .main-menu a:hover {
       color: #252525; }
+  @media only screen and (max-width: 767px) {
+    #lp-folder-wrapper .main-menu {
+      display: none; } }
+#lp-folder-wrapper .main-menu-select {
+  background: #ffffff;
+  border: 1px solid #ccc;
+  color: #9b9b9b;
+  display: none;
+  font-size: 1.5em;
+  margin: 1em auto;
+  outline: none;
+  padding: 1em;
+  appearance: none; }
+  @media only screen and (max-width: 767px) {
+    #lp-folder-wrapper .main-menu-select {
+      display: block; } }
 #lp-folder-wrapper .content-row.z-shadow, #lp-folder-wrapper .content-block.z-shadow {
   display: block;
   position: relative;
