@@ -31,6 +31,22 @@
 			</li>
 		<?php } ?>
 		</ul>
+
+		<select class="main-menu-select" name="menu" id="main-menu-dropdown">
+			<?php foreach ($links as $link) { ?>
+			<?php if ($link["pagina"] === $active){ ?>
+			<option value="<?php $link['url'] ?>" selected>
+				<?php echo $link["pagina"]; ?>
+			</option>
+			<?php }else{ ?>
+			<option value="<?php $link['url'] ?>">
+				<?php echo $link["pagina"]; ?>
+			</option>
+			<?php } ?>
+		<?php } ?>
+		</select>
+
+		<form action=""></form>
 		<!-- Eerste categoriehoofding -->
 		<div class="content-row z-shadow">
 			<h2 class="categorie-titel"><?php echo $categorie ?></h2>
