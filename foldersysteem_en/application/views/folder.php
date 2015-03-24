@@ -11,6 +11,21 @@
 </head>
 <body>
 	<div id="lp-folder-wrapper">
+		<!-- filermenu -->
+		<ul class="main-menu">
+		<?php foreach ($links as $link) { ?>
+			<li>
+				<?php if ($link["pagina"] === $active) {
+					echo $link["pagina"];
+				} 
+				else { ?>
+					<a href="<?php echo $link["url"]; ?>">
+					<?php echo $link["pagina"]; ?>
+					</a>
+				<?php } ?>
+			</li>
+		<?php } ?>
+		</ul>
 		<!-- Eerste categoriehoofding -->
 		<div class="content-row z-shadow">
 			<h2 class="categorie-titel"><?php echo $categorie ?></h2>
@@ -89,13 +104,13 @@
 			<?php } ?>
 			<!-- print lookbook image -->
 			<?php if(isset($product['lookbook'])) { ?>
-				<div class="col-3 row-1 product-container lookbook" bg-data="../../images/producten/<?php echo $product['img'] ?>">
+				<div class="col-3 row-1 product-container lookbook" data-bg="../../images/producten/<?php echo $product['img'] ?>">
 					<a href="http://www.asadventure.com<?php echo $product['link'] ?>">
 						<span>
 							<?php echo $product['productnaam'] ?>
 						</span>
 						<button>
-							Naar de lookbook
+							View the lookbook
 						</button>
 			<?php	}  else {?>
 			<!-- print product -->
@@ -110,8 +125,9 @@
 							if(isset($product['oudeprijs'])) { ?>
 							<p class="barred-price">&euro; <?php echo $product['oudeprijs'] ?></p>
 							<?php } ?>
+							<?php if(isset($product['nieuweprijs'])) { ?>
 							<p class="new-price"><span class="currency">&euro;</span><?php echo $product['nieuweprijs'] ?></p>	
-						</div>
+							<?php } ?>						</div>
 						<h3><?php echo $product['productnaam'] ?> <span class="product-category"><?php echo $product['productomschrijving'] ?></span></h3>
 						
 						<div class="logo-container">

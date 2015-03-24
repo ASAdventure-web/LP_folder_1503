@@ -11,9 +11,44 @@
 </head>
 <body>
 	<div id="lp-folder-wrapper">
+		<!-- Header -->
+		<div class="video-wrapper">
+			<iframe src="https://player.vimeo.com/video/122990846" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div>
+				<!-- filermenu -->
+		<ul class="main-menu">
+		<?php foreach ($links as $link) { ?>
+			<li>
+				<?php if ($link["pagina"] === $active) {
+					echo $link["pagina"];
+
+				} 
+				else { ?>
+					<a href="<?php echo $link["url"]; ?>">
+					<?php echo $link["pagina"]; ?>
+					</a>
+				<?php } ?>
+			</li>
+		<?php } ?>
+		</ul>
 		<!-- Eerste categoriehoofding -->
 		<div class="content-row z-shadow">
-			<h2 class="categorie-titel"><?php echo $categorie ?></h2>
+						<h2 class="categorie-titel"><?php 
+				switch ($categorie) {
+				    case 'Fashion':
+				        echo "Prêt-à-porter";
+				        break;
+				    case 'Bike':
+				        echo "Cyclisme";
+				        break;
+				    case 'Run':
+				        echo "Course";
+				        break;
+				    case 'Outdoor':
+				        echo "Outdoor";
+				        break;
+				} ?>
+			</h2>
 		</div>
 		<!-- start eerste contentrow -->
 		<div class="content-row">
@@ -59,7 +94,23 @@
 				<div class="content-row z-shadow">
 				<!-- categorie herdefiniëren -->
 					<?php $categorie = $product["categorie"]; ?>
-					<h2 class="categorie-titel"><?php echo $categorie ?></h2>
+					<h2 class="categorie-titel"><?php 
+						switch ($categorie) {
+						    case 'Fashion':
+						        echo "Prêt-à-porter";
+						        break;
+						    case 'Bike':
+						        echo "Cyclisme";
+						        break;
+						    case 'Run':
+						        echo "Course à pied";
+						        break;
+						    case 'Outdoor':
+						        echo "Outdoor";
+						        break;
+						} ?>
+					</h2>
+
 								</div>
 				<div class="content-row">
 				<!-- end if -->
@@ -95,7 +146,7 @@
 							<?php echo $product['productnaam'] ?>
 						</span>
 						<button>
-							Naar de lookbook
+							Regardez le lookbook
 						</button>
 			<?php	}  else {?>
 			<!-- print product -->
@@ -110,8 +161,9 @@
 							if(isset($product['oudeprijs'])) { ?>
 							<p class="barred-price">&euro; <?php echo $product['oudeprijs'] ?></p>
 							<?php } ?>
+							<?php if(isset($product['nieuweprijs'])) { ?>
 							<p class="new-price"><span class="currency">&euro;</span><?php echo $product['nieuweprijs'] ?></p>	
-						</div>
+							<?php } ?>						</div>
 						<h3><?php echo $product['productnaam'] ?> <span class="product-category"><?php echo $product['productomschrijving'] ?></span></h3>
 						
 						<div class="logo-container">

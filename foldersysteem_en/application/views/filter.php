@@ -8,6 +8,21 @@
 </head>
 <body>
 	<div id="lp-folder-wrapper">
+		<!-- filermenu -->
+		<ul class="main-menu">
+		<?php foreach ($links as $link) { ?>
+			<li>
+				<?php if ($link["pagina"] === $active) {
+					echo $link["pagina"];
+				} 
+				else { ?>
+					<a href="<?php echo $link["url"]; ?>">
+					<?php echo $link["pagina"]; ?>
+					</a>
+				<?php } ?>
+			</li>
+		<?php } ?>
+		</ul>
 		<!-- start eerste contentrow -->
 		<div class="content-row">
 		<!-- loop door producten -->
@@ -58,8 +73,9 @@
 							if(isset($product['oudeprijs'])) { ?>
 							<p class="barred-price">&euro; <?php echo $product['oudeprijs'] ?></p>
 							<?php } ?>
+							<?php if(isset($product['nieuweprijs'])) { ?>
 							<p class="new-price"><span class="currency">&euro;</span><?php echo $product['nieuweprijs'] ?></p>	
-						</div>
+							<?php } ?>						</div>
 						<h3><?php echo $product['productnaam'] ?> <span class="product-category"><?php echo $product['productomschrijving'] ?></span></h3>
 						
 						<div class="logo-container">
