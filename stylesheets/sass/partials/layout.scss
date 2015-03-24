@@ -53,6 +53,7 @@
 .main-menu{
 	background: #ffffff;
 	color: #AF151E;
+	display: flex;
 	font-weight: bold;
 	margin: 0;
 	padding: 2em 0;
@@ -64,11 +65,15 @@
 		display: table;
 	}
 	li{
+		box-sizing: border-box;
 		float: left;
 		list-style-type: none;
 		padding: 0 1.2em;
+		&:first-child{
+			border-right: 1px solid #9b9b9b;
+		}
 		&:nth-last-child(3){
-			border-left: 2px solid #9b9b9b;
+			border-left: 1px solid #9b9b9b;
 		}
 		@include tablet-landscape{
 			font-size: .8em;
@@ -87,6 +92,25 @@
 		&:hover{
 			color: #252525;
 		}
+	}
+	@include mobile{
+		display: none;
+	}
+}
+
+.main-menu-select{
+	background: #ffffff;
+	border: 1px solid #ccc;
+	color: #9b9b9b;
+	display: none;
+	font-size: 1.5em;
+	margin: 1em auto;
+	outline: none;
+	padding: 1em;
+	appearance: none;
+
+	@include mobile{
+		display: block;
 	}
 }
 
