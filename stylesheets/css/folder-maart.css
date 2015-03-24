@@ -242,6 +242,11 @@
         display: block; } }
   #lp-folder-wrapper form {
     display: none; }
+  #lp-folder-wrapper .content-row.z-shadow {
+    text-align: center; }
+    #lp-folder-wrapper .content-row.z-shadow img {
+      display: inline-block;
+      padding: 30px; }
   #lp-folder-wrapper .content-row.z-shadow, #lp-folder-wrapper .content-block.z-shadow {
     display: block;
     position: relative;
