@@ -8,6 +8,21 @@
 </head>
 <body>
 	<div id="lp-folder-wrapper">
+		<!-- filermenu -->
+		<ul>
+		<?php foreach ($links as $link) { ?>
+			<li>
+				<?php if ($link["pagina"] === $active) {
+					echo $link["pagina"];
+				} 
+				else { ?>
+					<a href="<?php echo $link["url"]; ?>">
+					<?php echo $link["pagina"]; ?>
+					</a>
+				<?php } ?>
+			</li>
+		<?php } ?>
+		</ul>
 		<!-- start eerste contentrow -->
 		<div class="content-row">
 		<!-- loop door producten -->
