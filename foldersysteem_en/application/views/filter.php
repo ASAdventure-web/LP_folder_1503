@@ -9,7 +9,7 @@
 <body>
 	<div id="lp-folder-wrapper">
 		<!-- filermenu -->
-		<ul>
+		<ul class="main-menu">
 		<?php foreach ($links as $link) { ?>
 			<li>
 				<?php if ($link["pagina"] === $active) {
