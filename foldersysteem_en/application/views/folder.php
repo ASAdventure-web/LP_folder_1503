@@ -28,7 +28,7 @@
 		</ul>
 		<!-- Eerste categoriehoofding -->
 		<div class="content-row z-shadow">
-			<h2 class="categorie-titel"><?php echo $categorie ?></h2>
+			<img data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/tussentitels/<?php echo strtolower($categorie) ?>.jpg">
 		</div>
 		<!-- start eerste contentrow -->
 		<div class="content-row">
@@ -74,7 +74,7 @@
 				<div class="content-row z-shadow">
 				<!-- categorie herdefiniëren -->
 					<?php $categorie = $product["categorie"]; ?>
-					<h2 class="categorie-titel"><?php echo $categorie ?></h2>
+			<img data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/tussentitels/<?php echo strtolower($categorie) ?>.jpg">
 								</div>
 				<div class="content-row">
 				<!-- end if -->
