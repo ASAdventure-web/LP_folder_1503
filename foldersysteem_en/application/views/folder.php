@@ -104,7 +104,7 @@
 			<?php } ?>
 			<!-- print lookbook image -->
 			<?php if(isset($product['lookbook'])) { ?>
-				<div class="col-3 row-1 product-container lookbook" bg-data="../../images/producten/<?php echo $product['img'] ?>">
+				<div class="col-3 row-1 product-container lookbook" data-bg="../../images/producten/<?php echo $product['img'] ?>">
 					<a href="http://www.asadventure.com<?php echo $product['link'] ?>">
 						<span>
 							<?php echo $product['productnaam'] ?>
