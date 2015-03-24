@@ -16,7 +16,7 @@
 			<iframe src="https://player.vimeo.com/video/122990846" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		</div>
 				<!-- filermenu -->
-		<ul>
+		<ul class="main-menu">
 		<?php foreach ($links as $link) { ?>
 			<li>
 				<?php if ($link["pagina"] === $active) {
