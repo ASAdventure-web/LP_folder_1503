@@ -15,10 +15,11 @@
 		<div class="video-wrapper">
 			<iframe src="https://player.vimeo.com/video/122988356" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		</div>
+		<!-- filermenu -->
 		<ul>
 		<?php foreach ($links as $link) { ?>
 			<li>
-				<?php if ($link["pagina"] === "Alle folderproducten") {
+				<?php if ($link["pagina"] === $active) {
 					echo $link["pagina"];
 
 				} 

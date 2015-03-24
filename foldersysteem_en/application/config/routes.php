@@ -39,16 +39,16 @@
 */
 
 $route['default_controller'] = '';
-$route['alle'] = 'products';
-$route['dames'] = 'products/dames';
-$route['heren'] = 'products/heren';
+$route['all'] = 'products';
+$route['women'] = 'products/dames';
+$route['men'] = 'products/heren';
 $route['junior'] = 'products/junior';
 $route['fashion'] = 'products/fashion';
 $route['run'] = 'products/run';
 $route['bike'] = 'products/bike';
 $route['outdoor'] = 'products/outdoor';
 $route['picnic'] = 'products/picnic';
-$route['uitrusting'] = 'products/uitrusting';
+$route['equipment'] = 'products/uitrusting';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

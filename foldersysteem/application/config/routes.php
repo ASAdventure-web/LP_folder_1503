@@ -47,7 +47,7 @@ $route['fashion'] = 'products/fashion';
 $route['run'] = 'products/run';
 $route['bike'] = 'products/bike';
 $route['outdoor'] = 'products/outdoor';
-$route['picnic'] = 'products/picnic';
+$route['picknick'] = 'products/picnic';
 $route['uitrusting'] = 'products/uitrusting';
 
 /* End of file routes.php */

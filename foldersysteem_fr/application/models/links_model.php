@@ -6,7 +6,7 @@ class Links_model extends CI_Model {
 		$this->load->database();
 	}
 
-	public function get_links($taal = "NL")
+	public function get_links($taal = "FR")
 	{
 			$query = $this->db->query("SELECT * FROM (`Links`) WHERE taal = '".$taal."' ORDER BY id ASC;");
 			return $query->result_array();
