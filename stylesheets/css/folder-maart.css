@@ -230,10 +230,12 @@
     border: 1px solid #ccc;
     color: #9b9b9b;
     display: none;
-    font-size: 1.5em;
+    font-size: 1.3em;
+    height: 2em;
     margin: 1em auto;
     outline: none;
     padding: 1em;
+    width: 80%;
     appearance: none; }
     @media only screen and (max-width: 767px) {
       #lp-folder-wrapper .main-menu-select {
