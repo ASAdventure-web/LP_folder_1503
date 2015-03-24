@@ -120,6 +120,15 @@ form{
 }
 
 //CONTENT ROW
+.content-row.z-shadow {
+	text-align: center;
+	img {
+		display: inline-block;
+		padding: 30px;
+	}
+}
+
+
 .content-row, .content-block{
 	&.z-shadow{
 		display: block;

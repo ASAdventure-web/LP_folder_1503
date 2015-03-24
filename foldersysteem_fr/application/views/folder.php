@@ -33,22 +33,22 @@
 		</ul>
 		<!-- Eerste categoriehoofding -->
 		<div class="content-row z-shadow">
-						<h2 class="categorie-titel"><?php 
+				<?php 
 				switch ($categorie) {
-				    case 'Fashion':
-				        echo "Prêt-à-porter";
-				        break;
-				    case 'Bike':
-				        echo "Cyclisme";
-				        break;
-				    case 'Run':
-				        echo "Course";
-				        break;
-				    case 'Outdoor':
-				        echo "Outdoor";
-				        break;
+				    case 'Fashion': ?>
+				        <img data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/tussentitels/<?php echo "pretaporter"; ?>.jpg">
+				    <?php    break;
+				    case 'Bike':?>
+				         <img data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/tussentitels/<?php echo "cyclisme"; ?>.jpg">
+
+				      <?php   break;
+				    case 'Run':?>
+				        <img data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/tussentitels/<?php echo "course"; ?>.jpg">
+				      <?php   break;
+				    case 'Outdoor':?>
+				        <img data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/tussentitels/<?php echo "outdoor"; ?>.jpg">
+				      <?php   break;
 				} ?>
-			</h2>
 		</div>
 		<!-- start eerste contentrow -->
 		<div class="content-row">
@@ -94,22 +94,22 @@
 				<div class="content-row z-shadow">
 				<!-- categorie herdefiniëren -->
 					<?php $categorie = $product["categorie"]; ?>
-					<h2 class="categorie-titel"><?php 
-						switch ($categorie) {
-						    case 'Fashion':
-						        echo "Prêt-à-porter";
-						        break;
-						    case 'Bike':
-						        echo "Cyclisme";
-						        break;
-						    case 'Run':
-						        echo "Course à pied";
-						        break;
-						    case 'Outdoor':
-						        echo "Outdoor";
-						        break;
-						} ?>
-					</h2>
+				<?php 
+				switch ($categorie) {
+				    case 'Fashion': ?>
+				        <img data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/tussentitels/<?php echo "pretaporter"; ?>.jpg">
+				    <?php    break;
+				    case 'Bike':?>
+				         <img data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/tussentitels/<?php echo "cyclisme"; ?>.jpg">
+
+				      <?php   break;
+				    case 'Run':?>
+				        <img data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/tussentitels/<?php echo "course"; ?>.jpg">
+				      <?php   break;
+				    case 'Outdoor':?>
+				        <img data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/tussentitels/<?php echo "outdoor"; ?>.jpg">
+				      <?php   break;
+				} ?>
 
 								</div>
 				<div class="content-row">
