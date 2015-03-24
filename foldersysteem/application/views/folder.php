@@ -36,11 +36,11 @@
 		<select class="main-menu-select" name="menu" id="main-menu-dropdown">
 			<?php foreach ($links as $link) { ?>
 			<?php if ($link["pagina"] === $active){ ?>
-			<option value="<?php $link['url'] ?>" selected>
+			<option value="<?php echo $link['url'] ?>" selected>
 				<?php echo $link["pagina"]; ?>
 			</option>
 			<?php }else{ ?>
-			<option value="<?php $link['url'] ?>">
+			<option value="<?php echo $link['url'] ?>">
 				<?php echo $link["pagina"]; ?>
 			</option>
 			<?php } ?>

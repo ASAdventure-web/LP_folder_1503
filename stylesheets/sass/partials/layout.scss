@@ -113,6 +113,9 @@
 		display: block;
 	}
 }
+form{
+	display: none;
+}
 
 //CONTENT ROW
 .content-row, .content-block{
@@ -161,6 +164,7 @@
 				font-family: 'Proxima Nova';
 				font-size: 2em;
 				font-weight: 400;
+				line-height: 1;
 				padding: 55% 18% 40%;
 				text-align: center;
 				text-shadow: 	2px 3px 4px rgba(0,0,0,.7),
