@@ -15,6 +15,21 @@
 		<div class="video-wrapper">
 			<iframe src="https://player.vimeo.com/video/122988356" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		</div>
+		<ul>
+		<?php foreach ($links as $link) { ?>
+			<li>
+				<?php if ($link["pagina"] === "Alle folderproducten") {
+					echo $link["pagina"];
+
+				} 
+				else { ?>
+					<a href="<?php echo $link["url"]; ?>">
+					<?php echo $link["pagina"]; ?>
+					</a>
+				<?php } ?>
+			</li>
+		<?php } ?>
+		</ul>
 		<!-- Eerste categoriehoofding -->
 		<div class="content-row z-shadow">
 			<h2 class="categorie-titel"><?php echo $categorie ?></h2>
