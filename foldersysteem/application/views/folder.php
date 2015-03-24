@@ -9,10 +9,6 @@
 	<script src="http://static.asadventure.com/includes/landingpage/lentefolder2015/bower_components/lazyloadxt/dist/jquery.lazyloadxt.min.js"></script>
 	<script src="http://static.asadventure.com/includes/landingpage/lentefolder2015/bower_components/lazyloadxt/dist/jquery.lazyloadxt.bg.min.js"></script>
 	<script src="http://static.asadventure.com/includes/landingpage/lentefolder2015/scripts/filtering.min.js"></script>
-<<<<<<< HEAD
-=======
-
->>>>>>> feature/filtering
 </head>
 <body>
 	<div id="lp-folder-wrapper">
