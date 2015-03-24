@@ -104,7 +104,7 @@
 			<?php } ?>
 			<!-- print lookbook image -->
 			<?php if(isset($product['lookbook'])) { ?>
-				<div class="col-3 row-1 product-container lookbook" bg-data="../../images/producten/<?php echo $product['img'] ?>">
+				<div class="col-3 row-1 product-container lookbook" data-bg="../../images/producten/<?php echo $product['img'] ?>">
 					<a href="http://www.asadventure.com<?php echo $product['link'] ?>">
 						<span>
 							<?php echo $product['productnaam'] ?>
@@ -125,8 +125,9 @@
 							if(isset($product['oudeprijs'])) { ?>
 							<p class="barred-price">&euro; <?php echo $product['oudeprijs'] ?></p>
 							<?php } ?>
+							<?php if(isset($product['nieuweprijs'])) { ?>
 							<p class="new-price"><span class="currency">&euro;</span><?php echo $product['nieuweprijs'] ?></p>	
-						</div>
+							<?php } ?>						</div>
 						<h3><?php echo $product['productnaam'] ?> <span class="product-category"><?php echo $product['productomschrijving'] ?></span></h3>
 						
 						<div class="logo-container">
