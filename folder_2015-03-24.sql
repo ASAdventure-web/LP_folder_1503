@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.38)
 # Database: folder
-# Generation Time: 2015-03-24 12:49:53 +0000
+# Generation Time: 2015-03-24 14:02:14 +0000
 # ************************************************************
 
 
@@ -336,7 +336,7 @@ VALUES
 	(102,'ADIDAS_RUN-WINDSTOPPER_8431C50001_4444.jpg','/benl/adidas-windstopper-run-wind-heren-8431c50001?id_colour=2530',NULL,'54,95','Run','Windstopper Heren','Adidas','#3C4C70',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,1,NULL,100,'Run',NULL),
 	(103,'ADIDAS_RESPONSE_SHORT_8443C50005.jpg','/benl/adidas-broek-response-7-inch-heren-8443c50005?id_colour=4149',NULL,'32,95','Response','Herenshort','Adidas','adidas.jpg',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,1,NULL,100,'Run',NULL),
 	(104,'NATHAN_QUICK-VIEW-BOTTLE_85z1c50009_7070_01_be.jpg','/benl/nathan-divers-quick-view-85z1c50009?id_colour=4168',NULL,'29,95','Quick View','Drinkfles met telefoonhouder','Nathan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,NULL,100,'Run',NULL),
-	(105,'tomtom-nl.jpg','/benl/tomtom',NULL,NULL,'Promo','€ 30 terugbetaald *','Tomtom',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,NULL,10,'Run',NULL),
+	(105,'tomtom-nl.jpg','/benl/tomtom',NULL,NULL,'Promo','&euro; 30 terugbetaald *','Tomtom',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,NULL,10,'Run',NULL),
 	(106,'Tomtom_multisport-hrm_2473d30003_7171_01.jpg','/benl/tomtom-sporthorloge-multi-sport-hartslagmeter-2473d30003?id_colour=4246','199,95','149','Multisport','Hartslagmeter','Tomtom',NULL,'Gebruik ecocheques',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,100,'Run',NULL),
 	(107,'look1.jpg','/benl/lookbook/welkom-buiten',NULL,NULL,'Urban trekking',NULL,NULL,NULL,'float: right;',NULL,NULL,NULL,1,NULL,NULL,NULL,1,1,NULL,NULL,11,'Outdoor',1),
 	(108,'look2.jpg','/benl/lookbook/welkom-buiten',NULL,NULL,'Fleece trekking',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,19,'Outdoor',1),
@@ -473,7 +473,7 @@ VALUES
 	(102,'ADIDAS_RUN-WINDSTOPPER_8431C50001_4444.jpg','/en/adidas-windstopper-run-wind-men-8431c50001?id_colour=2530','Run','Windstopper Men',NULL),
 	(103,'ADIDAS_RESPONSE_SHORT_8443C50005.jpg','/en/adidas-trousers-response-7-inch-men-8443c50005?id_colour=4149','Response','Shorts Men',NULL),
 	(104,'NATHAN_QUICK-VIEW-BOTTLE_85z1c50009_7070_01_be.jpg','/en/nathan-divers-quick-view-85z1c50009?id_colour=4168','Quick View','Drinking Bottle',NULL),
-	(105,'tomtom-en.jpg','/en/tomtom','Promotion','€ 30 back *',NULL),
+	(105,'tomtom-en.jpg','/en/tomtom','Promotion','&euro; 30 back *',NULL),
 	(106,'Tomtom_multisport-hrm_2473d30003_7171_01.jpg','/en/tomtom-sportwatch-multi-sport-heart-rate-monitor-2473d30003?id_colour=4246','Multisport','Sportwatch Heart Rate Monitor','Use eco-cheques'),
 	(107,'look1.jpg','/en/lookbook/welcome-outside','Urban trekking',NULL,'float: right;'),
 	(108,'look2.jpg','/en/lookbook/welcome-outside','Fleece trekking',NULL,NULL),
@@ -610,7 +610,7 @@ VALUES
 	(102,'ADIDAS_RUN-WINDSTOPPER_8431C50001_4444.jpg','/befr/adidas-coupe-vent-run-wind-hommes-8431c50001?id_colour=2530','Run','Coupe-vent hommes',NULL),
 	(103,'ADIDAS_RESPONSE_SHORT_8443C50005.jpg','/befr/adidas-pantalon-response-7-inch-hommes-8443c50005?id_colour=4149','Response','Short hommes',NULL),
 	(104,'NATHAN_QUICK-VIEW-BOTTLE_85z1c50009_7070_01_be.jpg','/befr/nathan-divers-quick-view-85z1c50009?id_colour=4168','Quick View','Gourde',NULL),
-	(105,'tomtom-fr.jpg','/befr/tomtom','Action','30 € remboursé *',NULL),
+	(105,'tomtom-fr.jpg','/befr/tomtom','Action','30 &euro; remboursé *',NULL),
 	(106,'Tomtom_multisport-hrm_2473d30003_7171_01.jpg','/befr/tomtom-montre-de-sport-multi-sport-cardiofrequencemetre-2473d30003?id_colour=4246','Multisport','Cardiofréquencemètre','Utilisez vos eco-chèques'),
 	(107,'look1.jpg','/befr/lookbook/bienvenue-dehors','Urban trekking',NULL,'float: right;'),
 	(108,'look2.jpg','/befr/lookbook/bienvenue-dehors','Fleece trekking',NULL,NULL),
