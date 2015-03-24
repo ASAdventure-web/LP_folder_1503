@@ -8,7 +8,7 @@ class Links_model extends CI_Model {
 
 	public function get_links($taal = "NL")
 	{
-			$query = $this->db->query("SELECT * FROM (`Links`) WHERE taal = '".$taal."';");
+			$query = $this->db->query("SELECT * FROM (`Links`) WHERE taal = '".$taal."' ORDER BY id ASC;");
 			return $query->result_array();
 	}
 
