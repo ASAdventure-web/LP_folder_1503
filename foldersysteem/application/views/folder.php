@@ -19,7 +19,7 @@
 		<ul>
 		<?php foreach ($links as $link) { ?>
 			<li>
-				<?php if ($link["pagina"] === "Alle folderproducten") {
+				<?php if ($link["pagina"] === $active) {
 					echo $link["pagina"];
 
 				} 
