@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.38)
 # Database: folder
-# Generation Time: 2015-03-24 14:02:14 +0000
+# Generation Time: 2015-03-24 14:37:43 +0000
 # ************************************************************
 
 
@@ -305,14 +305,14 @@ VALUES
 	(67,'ONLY_TANT_4182C50069_1149.jpg','/benl/only-broek-tant-4182c50069?id_colour=379','26,95','19','Tant','Broek Dames','Only','exotic.jpg roses.jpg kerselaar.jpg',NULL,NULL,NULL,1,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,60,'Fashion',NULL),
 	(68,'ONLY_ANDY-LACE_4141C40044_3611.jpg','/benl/only-trui-andy-lace-4141c40044?id_colour=1886','26,95','19','Andy Lace','Damessweater','Only','#dfbcbd #9cdbe2 #E7E1D4',NULL,NULL,NULL,1,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,60,'Fashion',NULL),
 	(69,'haglofs_cargo40_2141c50007_5126_01_be.jpg','/benl/hagloefs-reistas-cargo-40-2141c50007?id_colour=3052','59,95','39','Cargo','Duffel 40l','Haglofs','geelgroen.jpg blauw.jpg bruinrood.jpg',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,1,NULL,NULL,60,'Fashion',NULL),
-	(70,'fatboy_picknickkleed.jpg','/benl/fatboy-gadget-picnic-lounge-mat-141zc50004?id_colour=1577',NULL,'249','Lounge','Picnic mat','Fatboy','arabic.jpg','Met gratis lampje t.w.v. € 59',NULL,NULL,1,NULL,NULL,1,1,NULL,NULL,NULL,NULL,60,'Fashion',NULL),
+	(70,'fatboy_picknickkleed.jpg','/benl/fatboy-gadget-picnic-lounge-mat-141zc50004?id_colour=1577',NULL,'249','Lounge','Picnic mat','Fatboy','arabic.jpg','Met gratis lampje t.w.v. &euro; 59',NULL,NULL,1,NULL,NULL,1,1,NULL,NULL,NULL,NULL,60,'Fashion',NULL),
 	(71,'OUTWELL_TRANSPORTER_153zc50001_5050_01_be.jpg','/benl/outwell-diverse-bolderkar-transporter-153zc50001?id_colour=2998',NULL,'119,95','Transporter','Bolderkar','Outwell','#52604E','Opvouwbaar',NULL,NULL,NULL,NULL,1,NULL,1,NULL,NULL,NULL,NULL,60,'Fashion',NULL),
 	(72,'DSTREZZED_TSHIRT_4411C50005_6262.jpg','/benl/dstrezzed-t-shirt-200002152-4411c50005?id_colour=3626','49,95','35','Lange mouw','T-shirt Heren','Dstrezzed','ribbels.jpg',NULL,NULL,NULL,NULL,1,NULL,1,NULL,NULL,NULL,NULL,NULL,60,'Fashion',NULL),
 	(73,'4462c50004_5656_01_be.jpg','/benl/dstrezzed-short-cargo-4462c50004?id_colour=3466','59,95','39','Cargo','Herenshort','Dstrezzed','#594C39',NULL,NULL,NULL,NULL,1,NULL,1,NULL,NULL,NULL,NULL,NULL,60,'Fashion',NULL),
 	(74,'DSTREZZED_SHORT_4461C50010_4106.jpg','/benl/dstrezzed-short-510005001-4461c50061?id_colour=3499','59,95','39','Tropical','Herenshort','Dstrezzed','tropical.jpg',NULL,NULL,NULL,NULL,1,NULL,1,NULL,NULL,NULL,NULL,NULL,60,'Fashion',NULL),
 	(75,'DSTREZZED_SHORT_4461C50061_5604.jpg','/benl/dstrezzed-short-chino-4461c50010?id_colour=2346','59,95','39','Chino','Herenshort','Dstrezzed','chino.jpg',NULL,NULL,NULL,NULL,1,NULL,1,NULL,NULL,NULL,NULL,NULL,60,'Fashion',NULL),
 	(76,'YAYA_41C3C50037_6565.jpg','/benl/yaya-jas-050221-as-41c3c50037?id_colour=3934','79,95','55','Cognac','Damesjas','Yaya','#C36A38',NULL,NULL,NULL,1,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,60,'Fashion',NULL),
-	(77,'LOTUS-GRILL_BBQ_1432c50005_5252_01_be.jpg','/benl/lotus-grill-kookvuur-lotusgrill-classic-1432c50005?id_colour=3154',NULL,'159,95','Classic','Tafelbarbeque','Lotusgrill','#8EAE62 #B03436 #21211F','Met gratis brandstofkit t.w.v. € 15,90',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,70,'Outdoor',NULL),
+	(77,'LOTUS-GRILL_BBQ_1432c50005_5252_01_be.jpg','/benl/lotus-grill-kookvuur-lotusgrill-classic-1432c50005?id_colour=3154',NULL,'159,95','Classic','Tafelbarbeque','Lotusgrill','#8EAE62 #B03436 #21211F','Met gratis brandstofkit t.w.v. &euro; 15,90',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,70,'Outdoor',NULL),
 	(78,'2g31c40016_0101_01.jpg','/benl/suck-uk-gadget-kartonnen-radio-2g31c40016?id_colour=5806',NULL,'39,95','Kartonnen radio','Gadget','Suck UK','#D19A60',NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,70,'Outdoor',NULL),
 	(79,'ESSCHERT_TUINFAKKELS.jpg','/benl/index.cfm/fuseaction/products.search/?searchvalue=tuinfakkel',NULL,'3,95','Tuinfakkel','small/medium','Esschert','#ED8440 #D795BB #73B6E0 #F5D082','Vanaf',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,70,'Outdoor',NULL),
 	(80,'ESSCHERT_BIJENHUIS.jpg','/benl/esschert-gadget-bijenhuis-2g32c50037?id_colour=3194',NULL,'11,95','Bijenhuis','Gadget','Esschert',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,70,'Outdoor',NULL),
@@ -442,14 +442,14 @@ VALUES
 	(67,'ONLY_TANT_4182C50069_1149.jpg','/en/only-trousers-tant-4182c50069?id_colour=379','Tant','Trousers Women',NULL),
 	(68,'ONLY_ANDY-LACE_4141C40044_3611.jpg','/en/only-pullover-andy-lace-4141c40044?id_colour=1886','Andy Lace','Pullover Women',NULL),
 	(69,'haglofs_cargo40_2141c50007_5126_01_be.jpg','/en/hagloefs-travel-bag-cargo-40-2141c50007?id_colour=3052','Cargo','Travel Bag 40l',NULL),
-	(70,'fatboy_picknickkleed.jpg','/en/fatboy-miscellaneous-blanket-picnic-lounge-141zc50004?id_colour=1577','Lounge','Blanket Picnic','Lamp (worth 59 €) for free'),
+	(70,'fatboy_picknickkleed.jpg','/en/fatboy-miscellaneous-blanket-picnic-lounge-141zc50004?id_colour=1577','Lounge','Blanket Picnic','Lamp (worth &euro; 59) for free'),
 	(71,'OUTWELL_TRANSPORTER_153zc50001_5050_01_be.jpg','/en/outwell-misc-transporter-153zc50001?id_colour=2998','Transporter','Transporter','Foldable'),
 	(72,'DSTREZZED_TSHIRT_4411C50005_6262.jpg','/en/dstrezzed-t-shirt-200002152-4411c50005?id_colour=3626','Long Sleeves','T-shirt Men',NULL),
 	(73,'4462c50004_5656_01_be.jpg','/en/dstrezzed-shorts-cargo-4462c50004?id_colour=3466','Cargo','Shorts Men',NULL),
 	(74,'DSTREZZED_SHORT_4461C50010_4106.jpg','/en/dstrezzed-shorts-510005001-4461c50061?id_colour=3499','Tropical','Shorts Men',NULL),
 	(75,'DSTREZZED_SHORT_4461C50061_5604.jpg','/en/dstrezzed-shorts-chino-4461c50010?id_colour=2346','Chino','Shorts Men',NULL),
 	(76,'YAYA_41C3C50037_6565.jpg','/en/yaya-coat-050221-as-41c3c50037?id_colour=3934','Cognac','Coat Women',NULL),
-	(77,'LOTUS-GRILL_BBQ_1432c50005_5252_01_be.jpg','/en/lotus-grill-stove-lotusgrill-classic-1432c50005?id_colour=3154','Classic','Barbecue Grill','Fuelkit (worth €15.90) for free'),
+	(77,'LOTUS-GRILL_BBQ_1432c50005_5252_01_be.jpg','/en/lotus-grill-stove-lotusgrill-classic-1432c50005?id_colour=3154','Classic','Barbecue Grill','Fuelkit (worth &euro; 15.90) for free'),
 	(78,'2g31c40016_0101_01.jpg','/en/suck-uk-gadget-cardboard-radio-2g31c40016?id_colour=5806','Cardboard Radio','Gadget',NULL),
 	(79,'ESSCHERT_TUINFAKKELS.jpg','/en/index.cfm/fuseaction/products.search/?searchvalue=Garden+torch','Garden Torch','small/medium','From'),
 	(80,'ESSCHERT_BIJENHUIS.jpg','/en/esschert-gadget-bee-house-2g32c50037?id_colour=3194','Bee House','Gadget',NULL),
@@ -579,14 +579,14 @@ VALUES
 	(67,'ONLY_TANT_4182C50069_1149.jpg','/befr/only-pantalon-tant-4182c50069?id_colour=379','Tant','Pantalon femmes',NULL),
 	(68,'ONLY_ANDY-LACE_4141C40044_3611.jpg','/befr/only-pull-andy-lace-4141c40044?id_colour=1886','Andy Lace','Pull femmes',NULL),
 	(69,'haglofs_cargo40_2141c50007_5126_01_be.jpg','/befr/hagloefs-sac-de-voyage-cargo-40-2141c50007?id_colour=3052','Cargo','Sac de voyage 40l',NULL),
-	(70,'fatboy_picknickkleed.jpg','/befr/fatboy-gadget-tapis-picnic-lounge-141zc50004?id_colour=1577','Lounge','Tapis picnic','Une petite lampe d\'une valeur de € 59 inclus'),
+	(70,'fatboy_picknickkleed.jpg','/befr/fatboy-gadget-tapis-picnic-lounge-141zc50004?id_colour=1577','Lounge','Tapis picnic','Une petite lampe d\'une valeur de &euro; 59 inclus'),
 	(71,'OUTWELL_TRANSPORTER_153zc50001_5050_01_be.jpg','/befr/outwell-divers-chariot-de-transport-transporter-153zc50001?id_colour=2998','Transporter','Chariot de transport','Repliez-le'),
 	(72,'DSTREZZED_TSHIRT_4411C50005_6262.jpg','/befr/dstrezzed-t-shirt-200002152-4411c50005?id_colour=2270','Manche longue','T-shirt hommes',NULL),
 	(73,'4462c50004_5656_01_be.jpg','/befr/dstrezzed-short-cargo-4462c50004?id_colour=3466','Cargo','Short hommes',NULL),
 	(74,'DSTREZZED_SHORT_4461C50010_4106.jpg','/befr/dstrezzed-short-510005001-4461c50061?id_colour=3499','Tropical','Short hommes',NULL),
 	(75,'DSTREZZED_SHORT_4461C50061_5604.jpg','/befr/dstrezzed-short-chino-4461c50010?id_colour=2346','Chino','Short hommes',NULL),
 	(76,'YAYA_41C3C50037_6565.jpg','/befr/yaya-manteau-050221-as-41c3c50037?id_colour=3934','Cognac','Manteau femmes',NULL),
-	(77,'LOTUS-GRILL_BBQ_1432c50005_5252_01_be.jpg','/befr/lotus-grill-rechaud-lotusgrill-classic-1432c50005?id_colour=3154','Classic','Barbecue de table','Kit de démarrage gratuit d\'une valeur de € 15,90'),
+	(77,'LOTUS-GRILL_BBQ_1432c50005_5252_01_be.jpg','/befr/lotus-grill-rechaud-lotusgrill-classic-1432c50005?id_colour=3154','Classic','Barbecue de table','Kit de démarrage gratuit d\'une valeur de &euro; 15'),
 	(78,'2g31c40016_0101_01.jpg','/befr/suck-uk-gadget-radio-en-carton-2g31c40016?id_colour=5806','Radio en carton','Gadget',NULL),
 	(79,'ESSCHERT_TUINFAKKELS.jpg','/befr/index.cfm/fuseaction/products.search/?searchvalue=flambeaux+de+jardin','Flambeaux de jardin','small/medium','à partir de'),
 	(80,'ESSCHERT_BIJENHUIS.jpg','/befr/esschert-gadget-maison-pour-abeilles-2g32c50037?id_colour=3194','Maison à abeilles','Gadget',NULL),
