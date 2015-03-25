@@ -67,7 +67,7 @@ class Products extends CI_Controller {
 		$data['products'] = $this->products_model->get_products('fashion');
 		$data['photos'] = $this->photo_model->get_photos('fashion');
 		$data['links'] = $this->links_model->get_links();	
-		$data['active'] = "Prêt-à-porter";
+		$data['active'] = "Pr&ecirc;t-&agrave;-porter";
 		$data['count'] = 0;
 		$data['gridcount'] = 0;
 		$data['photocount'] = 0;
@@ -132,7 +132,7 @@ class Products extends CI_Controller {
 		$data['products'] = $this->products_model->get_products('uitrusting');
 		$data['photos'] = $this->photo_model->get_photos('uitrusting');
 		$data['links'] = $this->links_model->get_links();	
-		$data['active'] = "Équipement";
+		$data['active'] = "&Eacute;quipement";
 		$data['count'] = 0;
 		$data['gridcount'] = 0;
 		$data['photocount'] = 0;
