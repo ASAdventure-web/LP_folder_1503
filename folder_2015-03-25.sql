@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.38)
 # Database: folder
-# Generation Time: 2015-03-25 08:30:52 +0000
+# Generation Time: 2015-03-25 09:41:18 +0000
 # ************************************************************
 
 
@@ -73,7 +73,7 @@ DROP TABLE IF EXISTS `Links`;
 CREATE TABLE `Links` (
   `id` int(2) unsigned zerofill NOT NULL AUTO_INCREMENT,
   `url` varchar(100) NOT NULL DEFAULT '',
-  `pagina` varchar(20) DEFAULT NULL,
+  `pagina` varchar(30) DEFAULT NULL,
   `taal` varchar(2) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -105,8 +105,8 @@ VALUES
 	(20,'http://www.asadventure.com/benl/content/nl/lentefolder2015-junior','Junior','EN'),
 	(21,'http://www.asadventure.com/befr/content/fr/depliantdeprintemps2015','Tous les produit','FR'),
 	(22,'http://www.asadventure.com/befr/content/fr/depliantdeprintemps2015-outdoor','Outdoor','FR'),
-	(23,'http://www.asadventure.com/befr/content/fr/depliantdeprintemps2015-equipement','Équipement','FR'),
-	(24,'http://www.asadventure.com/befr/content/fr/depliantdeprintemps2015-pret-a-porter','Prêt-à-porter','FR'),
+	(23,'http://www.asadventure.com/befr/content/fr/depliantdeprintemps2015-equipement','&Eacute;quipement','FR'),
+	(24,'http://www.asadventure.com/befr/content/fr/depliantdeprintemps2015-pret-a-porter','Pr&ecirc;t-&agrave;-porter','FR'),
 	(25,'http://www.asadventure.com/befr/content/fr/depliantdeprintemps2015-pique-nique','Pique-nique','FR'),
 	(26,'http://www.asadventure.com/befr/content/fr/depliantdeprintemps2015-course','Course','FR'),
 	(27,'http://www.asadventure.com/befr/content/fr/depliantdeprintemps2015-cyclisme','Cyclisme','FR'),
