@@ -49,7 +49,7 @@
 		<form action=""></form>
 		<!-- Eerste categoriehoofding -->
 		<div class="content-row z-shadow">
-			<img data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/tussentitels/<?php echo strtolower($categorie) ?>.jpg">
+			<img src="" data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/tussentitels/<?php echo strtolower($categorie) ?>.jpg">
 		</div>
 		<!-- start eerste contentrow -->
 		<div class="content-row">
@@ -70,7 +70,7 @@
 							<?php if(isset($photos[$photocount]['link'])) { ?>
 								<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 							<?php } ?>	
-								<img data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/beelden/nl/<?php echo $photos[$photocount]['beeld'] ?>">
+								<img src="" data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/beelden/nl/<?php echo $photos[$photocount]['beeld'] ?>">
 							<?php if(isset($photos[$photocount]['link'])) { ?>
 								</a>
 							<?php } ?>
@@ -81,7 +81,7 @@
 							<?php if(isset($photos[$photocount]['link'])) { ?>
 								<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 							<?php } ?>	
-								<img data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/beelden/nl/<?php echo $photos[$photocount]['beeld'] ?>">
+								<img src="" data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/beelden/nl/<?php echo $photos[$photocount]['beeld'] ?>">
 							<?php if(isset($photos[$photocount]['link'])) { ?>
 								</a>
 							<?php } ?>
@@ -95,7 +95,7 @@
 				<div class="content-row z-shadow">
 				<!-- categorie herdefiniëren -->
 					<?php $categorie = $product["categorie"]; ?>
-			<img data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/tussentitels/<?php echo strtolower($categorie) ?>.jpg">
+			<img src="" data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/tussentitels/<?php echo strtolower($categorie) ?>.jpg">
 								</div>
 				<div class="content-row">
 				<!-- end if -->
@@ -106,7 +106,7 @@
 					<?php if(isset($photos[$photocount]['link'])) { ?>
 						<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 					<?php } ?>	
-						<img data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/beelden/nl/<?php echo $photos[$photocount]['beeld'] ?>">
+						<img src="" data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/beelden/nl/<?php echo $photos[$photocount]['beeld'] ?>">
 					<?php if(isset($photos[$photocount]['link'])) { ?>
 						</a>
 					<?php } ?>
@@ -117,7 +117,7 @@
 					<?php if(isset($photos[$photocount]['link'])) { ?>
 						<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 					<?php } ?>	
-						<img data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/beelden/nl/<?php echo $photos[$photocount]['beeld'] ?>">
+						<img src="" data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/beelden/nl/<?php echo $photos[$photocount]['beeld'] ?>">
 					<?php if(isset($photos[$photocount]['link'])) { ?>
 						</a>
 					<?php } ?>
@@ -153,7 +153,7 @@
 						<h3><?php echo $product['productnaam'] ?> <span class="product-category"><?php echo $product['productomschrijving'] ?></span></h3>
 						
 						<div class="logo-container">
-							<img data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/merken/<?php echo $product['logo'] ?>" alt="<?php echo $product['merknaam'] ?>" class="logo">
+							<img src="" data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/merken/<?php echo $product['logo'] ?>" alt="<?php echo $product['merknaam'] ?>" class="logo">
 							<?php if(isset($product['kleur'])) { ?>
 							<div class="swatch-container">
 								<?php $kleuren = explode(" ", $product['kleur']); 
@@ -193,7 +193,7 @@
 				<?php if(isset($photos[$photocount]['link'])) { ?>
 					<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 				<?php } ?>	
-					<img data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/beelden/nl/<?php echo $photos[$photocount]['beeld'] ?>">
+					<img src="" data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/beelden/nl/<?php echo $photos[$photocount]['beeld'] ?>">
 				<?php if(isset($photos[$photocount]['link'])) { ?>
 					</a>
 				<?php } ?>
@@ -204,7 +204,7 @@
 				<?php if(isset($photos[$photocount]['link'])) { ?>
 					<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 				<?php } ?>	
-					<img data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/beelden/nl/<?php echo $photos[$photocount]['beeld'] ?>">
+					<img src="" data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/beelden/nl/<?php echo $photos[$photocount]['beeld'] ?>">
 				<?php if(isset($photos[$photocount]['link'])) { ?>
 					</a>
 				<?php } ?>
