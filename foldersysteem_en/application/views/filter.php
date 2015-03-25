@@ -4,7 +4,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Folder maart 2015 - Werktitel</title>
-	<link rel="stylesheet" href="../../stylesheets/css/folder-maart.css">
+	<link rel="stylesheet" href="http://static.asadventure.com/includes/landingpage/lentefolder2015/stylesheets/css/folder-maart.css">
+	<script src="http://static.asadventure.com/includes/landingpage/lentefolder2015/bower_components/lazyloadxt/dist/jquery.lazyloadxt.min.js"></script>
+	<script src="http://static.asadventure.com/includes/landingpage/lentefolder2015/scripts/filtering.min.js"></script>
+	<script src="http://static.asadventure.com/includes/landingpage/lentefolder2015/bower_components/lazyloadxt/dist/jquery.lazyloadxt.bg.min.js"></script>
 </head>
 <body>
 	<div id="lp-folder-wrapper">
@@ -33,7 +36,7 @@
 					<?php if(isset($photos[$photocount]['link'])) { ?>
 						<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 					<?php } ?>	
-						<img src="../../images/beelden/en/<?php echo $photos[$photocount]['beeld'] ?>">
+						<img src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/beelden/en/<?php echo $photos[$photocount]['beeld'] ?>">
 					<?php if(isset($photos[$photocount]['link'])) { ?>
 						</a>
 					<?php } ?>
@@ -44,7 +47,7 @@
 					<?php if(isset($photos[$photocount]['link'])) { ?>
 						<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 					<?php } ?>	
-						<img src="../../images/beelden/en/<?php echo $photos[$photocount]['beeld'] ?>">
+						<img src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/beelden/en/<?php echo $photos[$photocount]['beeld'] ?>">
 					<?php if(isset($photos[$photocount]['link'])) { ?>
 						</a>
 					<?php } ?>
@@ -52,7 +55,7 @@
 			<?php } ?>
 			<!-- print lookbook image -->
 			<?php if(isset($product['lookbook'])) { ?>
-				<div class="col-3 row-1 product-container lookbook" style="background: url(../../images/producten/<?php echo $product['img'] ?>); <?php if(isset($product['specialeactie'])) { print($product['specialeactie'].';'); } ?>">
+				<div class="col-3 row-1 product-container lookbook" style="background: url(http://static.asadventure.com/includes/landingpage/lentefolder2015/images/producten/<?php echo $product['img'] ?>); <?php if(isset($product['specialeactie'])) { print($product['specialeactie'].';'); } ?>">
 					<a href="http://www.asadventure.com<?php echo $product['link'] ?>">
 						<span>
 							<?php echo $product['productnaam'] ?>
@@ -64,7 +67,7 @@
 			<!-- print product -->
 			<div class="col-3 row-1 product-container <?php if(isset($product['exclusief'])) { print(' exclusive'); } if (isset($product['uitverkocht'])) { print(' sold-out'); }?>">
 				<a href="http://www.asadventure.com<?php echo $product['link'] ?>" alt="<?php echo $product['productnaam'] ?>" class="contentlink">
-					<img class="product-image" src="../../images/producten/<?php echo $product['img'] ?>" title="<?php echo $product['productnaam'].' '.$product['productomschrijving'] ?>">
+					<img class="product-image" src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/producten/<?php echo $product['img'] ?>" title="<?php echo $product['productnaam'].' '.$product['productomschrijving'] ?>">
 					<div class="bottom-container">
 						<div class="price-tag">
 							<?php if(isset($product['specialeactie'])) { ?>
@@ -79,7 +82,7 @@
 						<h3><?php echo $product['productnaam'] ?> <span class="product-category"><?php echo $product['productomschrijving'] ?></span></h3>
 						
 						<div class="logo-container">
-							<img src="../../images/merken/<?php echo $product['logo'] ?>" alt="<?php echo $product['merknaam'] ?>" class="logo">
+							<img src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/merken/<?php echo $product['logo'] ?>" alt="<?php echo $product['merknaam'] ?>" class="logo">
 							<?php if(isset($product['kleur'])) { ?>
 							<div class="swatch-container">
 								<?php $kleuren = explode(" ", $product['kleur']); 
@@ -88,7 +91,7 @@
 										<span class="swatch" style="background: <?php echo $kleur ?>"></span>								
 								<?php 	}
 										else { ?>
-											<span class="swatch" style="background: url('../../images/kleuren/<?php echo $kleur ?>')"></span>
+											<span class="swatch" style="background: url('http://static.asadventure.com/includes/landingpage/lentefolder2015/images/kleuren/<?php echo $kleur ?>')"></span>
 										<?php }
 								}
 								?>
@@ -119,7 +122,7 @@
 				<?php if(isset($photos[$photocount]['link'])) { ?>
 					<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 				<?php } ?>	
-					<img src="../../images/beelden/en/<?php echo $photos[$photocount]['beeld'] ?>">
+					<img src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/beelden/en/<?php echo $photos[$photocount]['beeld'] ?>">
 				<?php if(isset($photos[$photocount]['link'])) { ?>
 					</a>
 				<?php } ?>
@@ -130,7 +133,7 @@
 				<?php if(isset($photos[$photocount]['link'])) { ?>
 					<a href="<?php echo $photos[$photocount]['link'] ?>" alt="<?php echo $photos[$photocount]['alt'] ?>">
 				<?php } ?>	
-					<img src="../../images/beelden/en/<?php echo $photos[$photocount]['beeld'] ?>">
+					<img src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/beelden/en/<?php echo $photos[$photocount]['beeld'] ?>">
 				<?php if(isset($photos[$photocount]['link'])) { ?>
 					</a>
 				<?php } ?>
