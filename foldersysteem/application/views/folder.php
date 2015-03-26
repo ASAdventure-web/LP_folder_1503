@@ -126,7 +126,7 @@
 			<!-- print lookbook image -->
 			<?php if(isset($product['lookbook'])) { ?>
 				<div class="col-3 row-1 product-container lookbook" data-bg="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/producten/<?php echo $product['img'] ?>">
-					<a href="http://www.asadventure.com<?php echo $product['link'] ?>">
+					<a href="<?php echo $product['link'] ?>">
 						<span>
 							<?php echo $product['productnaam'] ?>
 						</span>
@@ -136,7 +136,7 @@
 			<?php	}  else {?>
 			<!-- print product -->
 			<div class="col-3 row-1 product-container <?php if(isset($product['exclusief'])) { print(' exclusive-nl'); } if (isset($product['uitverkocht'])) { print(' sold-out-nl'); }?>">
-				<a href="http://www.asadventure.com<?php echo $product['link'] ?>" alt="<?php echo $product['productnaam'] ?>" class="contentlink">
+				<a href="<?php echo $product['link'] ?>" alt="<?php echo $product['productnaam'] ?>" class="contentlink">
 					<img class="product-image" data-src="http://static.asadventure.com/includes/landingpage/lentefolder2015/images/producten/<?php echo $product['img'] ?>" title="<?php echo $product['productnaam'].' '.$product['productomschrijving'] ?>">
 					<div class="bottom-container">
 						<div class="price-tag">
