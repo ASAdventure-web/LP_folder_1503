@@ -14,7 +14,7 @@ class Products extends CI_Controller {
 		$data['products'] = $this->products_model->get_products();
 		$data['photos'] = $this->photo_model->get_photos();
 		$data['links'] = $this->links_model->get_links();	
-		$data['active'] = "Tous les produit";
+		$data['active'] = "Tous les produits";
 		$data['count'] = 0;
 		$data['gridcount'] = 0;
 		$data['photocount'] = 0;
@@ -67,7 +67,7 @@ class Products extends CI_Controller {
 		$data['products'] = $this->products_model->get_products('fashion');
 		$data['photos'] = $this->photo_model->get_photos('fashion');
 		$data['links'] = $this->links_model->get_links();	
-		for ($i=0; $i<6; $i++) {
+		for ($i=0; $i<8; $i++) {
 			$samsonite = array_shift($data['products']);
 			array_push($data['products'], $samsonite);
 		}
