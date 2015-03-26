@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.38)
 # Database: folder
-# Generation Time: 2015-03-25 09:41:18 +0000
+# Generation Time: 2015-03-25 10:16:34 +0000
 # ************************************************************
 
 
@@ -511,12 +511,12 @@ LOCK TABLES `Products_fr` WRITE;
 
 INSERT INTO `Products_fr` (`id`, `img`, `link`, `productnaam`, `productomschrijving`, `specialeactie`)
 VALUES
-	(2,'CORTINA_U4-JEANS-FIETS_711fc50001_4545_01_be.jpg','/befr/cortina-velo-de-ville-transport-mini-u4-711lc50019?id_colour=2608','Transport Mini U4 Jeans','V&eacute;lo garçons','+ 2 entretiens gratuits inclus'),
-	(3,'CMP_POWERSTRETCH_3542C40013_4222.jpg','/befr/cmp-polaire-powerstretch-3542c40013?id_colour=2355','Powerstretch','Polaires garçons',NULL),
+	(2,'CORTINA_U4-JEANS-FIETS_711fc50001_4545_01_be.jpg','/befr/cortina-velo-de-ville-transport-mini-u4-711lc50019?id_colour=2608','Transport Mini U4 Jeans','V&eacute;lo gar&ccedil;ons','+ 2 entretiens gratuits inclus'),
+	(3,'CMP_POWERSTRETCH_3542C40013_4222.jpg','/befr/cmp-polaire-powerstretch-3542c40013?id_colour=2355','Powerstretch','Polaires gar&ccedil;ons',NULL),
 	(4,'CMP_POWERSTRETCH_3542C50011_3232.jpg','/befr/cmp-polaire-powerstrech-3542c50011?id_colour=1594','Powerstretch','Polaires filles',NULL),
 	(5,'AYACUCHO_STOWAWAY-KIDS_35A6C50004_4204.jpg','/befr/index.cfm/fuseaction/products.search/?searchvalue=manteau+stowaway&flt_type_gender=junior&filters=type_gender|LIST','Stowaway','Manteau Junior','Seulement'),
 	(6,'BRIAN-N-NEPHEW_ETELKA_4781C40023_1004.jpg','/befr/brian-nephew-pantalon-etelka-4781c40023?id_colour=342','Etelka','Pantalon filles',NULL),
-	(7,'BRIAN-N-NEPHEW_GODOT_4A12C50143_7575.jpg','/befr/brian-nephew-t-shirt-godot-4a12c50143?id_colour=4558','Godot','T-shirt garçons',NULL),
+	(7,'BRIAN-N-NEPHEW_GODOT_4A12C50143_7575.jpg','/befr/brian-nephew-t-shirt-godot-4a12c50143?id_colour=4558','Godot','T-shirt gar&ccedil;ons',NULL),
 	(8,'PETIT-LOUIE_JAZZ_41A2C50119.jpg','/befr/petit-louie-robe-polo-jazz-apples-47a1c50081?id_colour=2497','Jazz Polo','Robe filles',NULL),
 	(9,'PETIT-LOUIE_OSAKA_47A1C50082.jpg','/befr/petit-louie-robe-cup-osaka-flowers-47a1c50082?id_colour=2752','Osaka Cup','Robe filles',NULL),
 	(10,'LONG-ISLAND_BUDDIES.jpg','/befr/long-island-skateboard-buddies-2c21c50002?id_colour=341','Buddies','Skateboard','Différentes coulerus et imprimés'),
@@ -611,7 +611,7 @@ VALUES
 	(103,'ADIDAS_RESPONSE_SHORT_8443C50005.jpg','/befr/adidas-pantalon-response-7-inch-hommes-8443c50005?id_colour=4149','Response','Short hommes',NULL),
 	(104,'NATHAN_QUICK-VIEW-BOTTLE_85z1c50009_7070_01_be.jpg','/befr/nathan-divers-quick-view-85z1c50009?id_colour=4168','Quick View','Gourde',NULL),
 	(105,'tomtom-fr.jpg','/befr/tomtom','Action','30 &euro; rembours&eacute; *',NULL),
-	(106,'Tomtom_multisport-hrm_2473d30003_7171_01.jpg','/befr/tomtom-montre-de-sport-multi-sport-cardiofrequencemetre-2473d30003?id_colour=4246','Multisport','Cardiofr&eacute;quencemètre','Utilisez vos eco-ch&egrave;ques'),
+	(106,'Tomtom_multisport-hrm_2473d30003_7171_01.jpg','/befr/tomtom-montre-de-sport-multi-sport-cardiofrequencemetre-2473d30003?id_colour=4246','Multisport','Cardiofr&eacute;quencem&egrave;tre','Utilisez vos eco-ch&egrave;ques'),
 	(107,'look1.jpg','/befr/lookbook/bienvenue-dehors','Urban trekking',NULL,'float: right;'),
 	(108,'look2.jpg','/befr/lookbook/bienvenue-dehors','Fleece trekking',NULL,NULL),
 	(109,'look3.jpg','/befr/lookbook/bienvenue-dehors','Nature trekking',NULL,'float: right;'),
